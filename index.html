@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title id="pageTitle">ನಮ್ಮ ಊರು ಶಾಪಿಂಗ್ ಡೆಲಿವರಿ ಬಾಯ್</title>
+  <!-- SEO & Search Engine Keywords (ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್ ಸರ್ಚ್ ಕೀಲಿಮಣೆಗಳು) -->
+  <title id="pageTitle">ನಮ್ಮ ಊರು ಶಾಪಿಂಗ್ ಡೆಲಿವರಿ ಬಾಯ್ - ನಮ್ಮ ಡೆಲಿವರಿ ಬಾಯ್ ಆಪ್ಸ್ | Shopping Delivery Boy App</title>
+  <meta name="description" content="ನಮ್ಮ ಊರು ಶಾಪಿಂಗ್ ಡೆಲಿವರಿ ಬಾಯ್ ಆಪ್, ಶಾಪಿಂಗ್ ಡೆಲಿವರಿ ಬಾಯ್ ಯಾಪ್, ಡೆಲಿವರಿ ಬಾಯ್ ಪಾರ್ಟ್ನರ್ ಆಪ್. ನಮ್ಮ ಡೆಲಿವರಿ ಬಾಯ್ ಆಪ್ಸ್ ಮೂಲಕ ಸುಲಭವಾಗಿ ಆರ್ಡರ್‌ಗಳನ್ನು ಮ್ಯಾನೇಜ್ ಮಾಡಿ.">
+  <meta name="keywords" content="ನಮ್ಮ ಊರುಶಾಪಿಂಗ್ ಡೆಲಿವರಿ ಬಾಯ್ ಯಾಪ್, ನಮ್ಮ ಡೆಲಿವರಿ ಬಾಯ್ ಆಪ್ಸ್, ಶಾಪಿಂಗ್ ಡೆಲಿವರಿ ಬಾಯ್ ಯಾಪ್, ಡೆಲಿವರಿ ಬಾಯ್ ಪಾರ್ಟ್ನರ್ ಯಾಪ್, Namma Ooru Shopping Delivery Boy App, Delivery Boy Partner App, Shopping Delivery App Shahapur">
+
   <link rel="icon" type="image/png" sizes="192x192" href="logo.png">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#e65100">
@@ -142,7 +146,7 @@
   <!-- ಸ್ಪ್ಲಾಶ್ ಸ್ಕ್ರೀನ್ -->
   <div id="splashScreen">
     <img src="logo.png" alt="Logo" class="splash-logo" onerror="this.src='logo.png'">
-    <h2 class="splash-title" style="color:white; border:none;">🚚 ನಮ್ಮ ಊರು ಶಾಪಿಂಗ್</h2>
+    <h2 class="splash-title" style="color:white; border:none;">🚚 ನಮ್ಮ ಊರು ಶಾಪಿಂಗ್ ಡೆಲಿವರಿ ಬಾಯ್</h2>
     <p class="splash-sub">ಡೆಲಿವರಿ ಬಾಯ್ ಪ್ಯಾನಲ್ ಲೋಡ್ ಆಗುತ್ತಿದೆ...</p>
   </div>
 
@@ -155,7 +159,7 @@
     </div>
   </div>
 
-  <!-- ಮೇಲ್ಭಾಗದ ಸಪೋರ್ಟ್ ಬಾರ್ (ಆಪ್ ಇನ್‌ಸ್ಟಾಲ್ ಆಗಿದ್ದರೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮಾಯವಾಗುತ್ತದೆ) -->
+  <!-- ಮೇಲ್ಭಾಗದ ಸಪೋರ್ಟ್ ಬಾರ್ -->
   <div class="support-bar">
     <button id="topInstallBtn" onclick="triggerInstallApp()" class="sup-btn install-top">📲 ಇನ್‌ಸ್ಟಾಲ್</button>
     <button onclick="logoutDboy()" class="sup-btn logout">🔄 ಮರು ಲಾಗಿನ್</button>
@@ -338,13 +342,7 @@
         // ಆಪ್ ಮೊಬೈಲ್‌ನಲ್ಲಿ ಇನ್‌ಸ್ಟಾಲ್ ಆಗಿ ಓಪನ್ ಆಗಿದ್ದರೆ ಇನ್‌ಸ್ಟಾಲ್ ಬಟನ್ ಆಟೋಮ್ಯಾಟಿಕ್ ಆಗಿ ಮಾಯವಾಗುತ್ತದೆ
         installBtn.style.display = 'none';
       } else {
-        // ಬ್ರೌಸರ್‌ನಲ್ಲಿ ರನ್ ಆಗುತ್ತಿದ್ದರೆ ಅಥವಾ ಆಪ್ ಡಿಲೀಟ್ ಆಗಿದ್ದರೆ ಮಾತ್ರ ಕಾಣಿಸುತ್ತದೆ
-        if (deferredPrompt) {
-          installBtn.style.display = 'inline-flex';
-        } else {
-          // ಮೊಬೈಲ್ ಬ್ರೌಸರ್‌ಗಳಲ್ಲಿ ಬಳಕೆದಾರರಿಗೆ ಅನುಕೂಲವಾಗಲು ಸದಾ ಲಭ್ಯವಿರುವಂತೆ ಅಥವಾ ಪ್ರಾಂಪ್ಟ್ ಇರುವಾಗ ತೋರಿಸುವುದು
-          installBtn.style.display = 'inline-flex';
-        }
+        installBtn.style.display = 'inline-flex';
       }
     }
 
@@ -376,7 +374,6 @@
       checkAppLiveStatus();
       checkInstallStatus();
 
-      // ಕಾಲಕಾಲಕ್ಕೆ ಸ್ಟ್ಯಾಂಡ್‌ಅಲೋನ್ ಮೋಡ್ ಚೆಕ್ ಮಾಡುವುದು
       window.addEventListener('resize', checkInstallStatus);
 
       if ('serviceWorker' in navigator) {
