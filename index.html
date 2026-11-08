@@ -87,7 +87,7 @@
     .sup-btn.call { background: #ff9800; }
     .sup-btn.share { background: #4caf50; }
     .sup-btn.logout { background: #e53935; }
-    .sup-btn.install-top { background: #2e7d32; display: inline-flex; animation: pulseInstall 1.5s infinite; }
+    .sup-btn.install-top { background: #2e7d32; display: none; animation: pulseInstall 1.5s infinite; }
     @keyframes pulseInstall {
       0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.7); }
       70% { transform: scale(1.03); box-shadow: 0 0 0 6px rgba(46, 125, 50, 0); }
@@ -155,7 +155,7 @@
     </div>
   </div>
 
-  <!-- ಮೇಲ್ಭಾಗದ ಸಪೋರ್ಟ್ ಬಾರ್ (ಇನ್‌ಸ್ಟಾಲ್ ಬಟನ್ ಯಾವಾಗಲೂ ಕಾಣುವಂತೆ ಸರಿಪಡಿಸಲಾಗಿದೆ) -->
+  <!-- ಮೇಲ್ಭಾಗದ ಸಪೋರ್ಟ್ ಬಾರ್ (ಆಪ್ ಇನ್‌ಸ್ಟಾಲ್ ಆಗಿದ್ದರೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮಾಯವಾಗುತ್ತದೆ) -->
   <div class="support-bar">
     <button id="topInstallBtn" onclick="triggerInstallApp()" class="sup-btn install-top">📲 ಇನ್‌ಸ್ಟಾಲ್</button>
     <button onclick="logoutDboy()" class="sup-btn logout">🔄 ಮರು ಲಾಗಿನ್</button>
@@ -321,33 +321,52 @@
       }, 2000);
     });
 
-    // ಬ್ರೌಸರ್ ಬ್ಯಾಕ್ ಬಟನ್ ಒತ್ತಿದಾಗ ಆಪ್ ಮುಚ್ಚಿಹೋಗದಂತೆ ತಡೆಯಲು ಇತಿಹಾಸ ನಿರ್ವಹಣೆ (History Stack Lock)
+    // ಬ್ರೌಸರ್ ಬ್ಯಾಕ್ ಬಟನ್ ಒತ್ತಿದಾಗ ಆಪ್ ಮುಚ್ಚಿಹೋಗದಂತೆ ತಡೆಯಲು ಇತಿಹಾಸ ನಿರ್ವಹಣೆ
     window.history.pushState({ page: 'home' }, '', '');
     window.addEventListener('popstate', (e) => {
       window.history.pushState({ page: 'home' }, '', '');
-      // ಬಳಕೆದಾರರು ಬ್ಯಾಕ್ ಒತ್ತಿದರೆ ಮುಚ್ಚುವ ಬದಲು ಹೋಮ್ ಅಥವಾ ಪ್ರಮುಖ ಟ್ಯಾಬ್‌ಗೆ ಮರಳುವಂತೆ ಮಾಡಲಾಗಿದೆ
       showTab('tasks');
     });
+
+    // ಇನ್‌ಸ್ಟಾಲ್ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ ಬಟನ್ ನಿಯಂತ್ರಿಸುವ ಮುಖ್ಯ ಫಂಕ್ಷನ್
+    function checkInstallStatus() {
+      const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+      const installBtn = document.getElementById('topInstallBtn');
+      if (!installBtn) return;
+
+      if (isStandalone) {
+        // ಆಪ್ ಮೊಬೈಲ್‌ನಲ್ಲಿ ಇನ್‌ಸ್ಟಾಲ್ ಆಗಿ ಓಪನ್ ಆಗಿದ್ದರೆ ಇನ್‌ಸ್ಟಾಲ್ ಬಟನ್ ಆಟೋಮ್ಯಾಟಿಕ್ ಆಗಿ ಮಾಯವಾಗುತ್ತದೆ
+        installBtn.style.display = 'none';
+      } else {
+        // ಬ್ರೌಸರ್‌ನಲ್ಲಿ ರನ್ ಆಗುತ್ತಿದ್ದರೆ ಅಥವಾ ಆಪ್ ಡಿಲೀಟ್ ಆಗಿದ್ದರೆ ಮಾತ್ರ ಕಾಣಿಸುತ್ತದೆ
+        if (deferredPrompt) {
+          installBtn.style.display = 'inline-flex';
+        } else {
+          // ಮೊಬೈಲ್ ಬ್ರೌಸರ್‌ಗಳಲ್ಲಿ ಬಳಕೆದಾರರಿಗೆ ಅನುಕೂಲವಾಗಲು ಸದಾ ಲಭ್ಯವಿರುವಂತೆ ಅಥವಾ ಪ್ರಾಂಪ್ಟ್ ಇರುವಾಗ ತೋರಿಸುವುದು
+          installBtn.style.display = 'inline-flex';
+        }
+      }
+    }
 
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault();
       deferredPrompt = e;
-      // ಇನ್‌ಸ್ಟಾಲ್ ಪ್ರಾಂಪ್ಟ್ ಲಭ್ಯವಿದ್ದಾಗ ಬಟನ್ ಸ್ಪಷ್ಟವಾಗಿ ಕಾಣುವಂತೆ ಮಾಡುವುದು
-      const installBtn = document.getElementById('topInstallBtn');
-      if (installBtn) installBtn.style.display = 'inline-flex';
+      checkInstallStatus();
     });
 
     window.addEventListener('appinstalled', () => {
-      // ಒಮ್ಮೆ ಇನ್‌ಸ್ಟಾಲ್ ಆದರೂ ಬಳಕೆದಾರರಿಗೆ ಅಗತ್ಯವಿದ್ದಾಗ ಶಾರ್ಟ್‌ಕಟ್/ಇನ್‌ಸ್ಟಾಲ್ ಬಟನ್ ಲಭ್ಯವಿರುವಂತೆ ಇಡಲಾಗಿದೆ
-      const installBtn = document.getElementById('topInstallBtn');
-      if (installBtn) installBtn.style.display = 'inline-flex';
+      deferredPrompt = null;
+      checkInstallStatus();
     });
 
     async function triggerInstallApp() {
       if (deferredPrompt) {
         deferredPrompt.prompt();
         const { outcome } = await deferredPrompt.userChoice;
-        deferredPrompt = null;
+        if (outcome === 'accepted') {
+          deferredPrompt = null;
+          checkInstallStatus();
+        }
       } else {
         alert("ಆಪ್ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು ನಿಮ್ಮ ಬ್ರೌಸರ್ ಮೆನು (⋮) ಬಳಸಿ 'Install app' ಅಥವಾ 'Add to Home screen' ಆಯ್ಕೆಮಾಡಿ.");
       }
@@ -355,6 +374,10 @@
 
     window.addEventListener('DOMContentLoaded', () => {
       checkAppLiveStatus();
+      checkInstallStatus();
+
+      // ಕಾಲಕಾಲಕ್ಕೆ ಸ್ಟ್ಯಾಂಡ್‌ಅಲೋನ್ ಮೋಡ್ ಚೆಕ್ ಮಾಡುವುದು
+      window.addEventListener('resize', checkInstallStatus);
 
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./sw.js').catch(err => console.log("SW fail", err));
