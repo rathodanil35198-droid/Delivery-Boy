@@ -139,7 +139,7 @@
 </head>
 <body>
 
-  <!-- ದೊಡ್ಡ ಲೋಗೋ ಜೊತೆಗಿನ ಸ್ಪ್ಲಾಶ್ ಸ್ಕ್ರೀನ್ -->
+  <!-- ಸ್ಪ್ಲಾಶ್ ಸ್ಕ್ರೀನ್ -->
   <div id="splashScreen">
     <img src="logo.png" alt="Logo" class="splash-logo" onerror="this.src='logo.png'">
     <h2 class="splash-title" style="color:white; border:none;">🚚 ನಮ್ಮ ಊರು ಶಾಪಿಂಗ್</h2>
@@ -155,7 +155,7 @@
     </div>
   </div>
 
-  <!-- ಮೇಲ್ಭಾಗದ ಸಪೋರ್ಟ್ ಬಾರ್ -->
+  <!-- ಮೇಲ್ಭಾಗದ ಸಪೋರ್ಟ್ ಬಾರ್ (ಇನ್‌ಸ್ಟಾಲ್ ಬಟನ್ ಯಾವಾಗಲೂ ಕಾಣುವಂತೆ ಸರಿಪಡಿಸಲಾಗಿದೆ) -->
   <div class="support-bar">
     <button id="topInstallBtn" onclick="triggerInstallApp()" class="sup-btn install-top">📲 ಇನ್‌ಸ್ಟಾಲ್</button>
     <button onclick="logoutDboy()" class="sup-btn logout">🔄 ಮರು ಲಾಗಿನ್</button>
@@ -319,49 +319,42 @@
           setTimeout(() => splash.style.display = 'none', 500);
         }
       }, 2000);
-      checkInstallStatus();
     });
 
-    function checkInstallStatus() {
-      const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-      const isInstalledFlag = localStorage.getItem('dboy_app_installed_status') === 'true';
-
-      if (isStandalone || isInstalledFlag) {
-        const installBtn = document.getElementById('topInstallBtn');
-        if (installBtn) installBtn.style.display = 'none';
-      }
-    }
+    // ಬ್ರೌಸರ್ ಬ್ಯಾಕ್ ಬಟನ್ ಒತ್ತಿದಾಗ ಆಪ್ ಮುಚ್ಚಿಹೋಗದಂತೆ ತಡೆಯಲು ಇತಿಹಾಸ ನಿರ್ವಹಣೆ (History Stack Lock)
+    window.history.pushState({ page: 'home' }, '', '');
+    window.addEventListener('popstate', (e) => {
+      window.history.pushState({ page: 'home' }, '', '');
+      // ಬಳಕೆದಾರರು ಬ್ಯಾಕ್ ಒತ್ತಿದರೆ ಮುಚ್ಚುವ ಬದಲು ಹೋಮ್ ಅಥವಾ ಪ್ರಮುಖ ಟ್ಯಾಬ್‌ಗೆ ಮರಳುವಂತೆ ಮಾಡಲಾಗಿದೆ
+      showTab('tasks');
+    });
 
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault();
       deferredPrompt = e;
-      checkInstallStatus();
+      // ಇನ್‌ಸ್ಟಾಲ್ ಪ್ರಾಂಪ್ಟ್ ಲಭ್ಯವಿದ್ದಾಗ ಬಟನ್ ಸ್ಪಷ್ಟವಾಗಿ ಕಾಣುವಂತೆ ಮಾಡುವುದು
+      const installBtn = document.getElementById('topInstallBtn');
+      if (installBtn) installBtn.style.display = 'inline-flex';
     });
 
     window.addEventListener('appinstalled', () => {
-      localStorage.setItem('dboy_app_installed_status', 'true');
+      // ಒಮ್ಮೆ ಇನ್‌ಸ್ಟಾಲ್ ಆದರೂ ಬಳಕೆದಾರರಿಗೆ ಅಗತ್ಯವಿದ್ದಾಗ ಶಾರ್ಟ್‌ಕಟ್/ಇನ್‌ಸ್ಟಾಲ್ ಬಟನ್ ಲಭ್ಯವಿರುವಂತೆ ಇಡಲಾಗಿದೆ
       const installBtn = document.getElementById('topInstallBtn');
-      if (installBtn) installBtn.style.display = 'none';
+      if (installBtn) installBtn.style.display = 'inline-flex';
     });
 
     async function triggerInstallApp() {
       if (deferredPrompt) {
         deferredPrompt.prompt();
         const { outcome } = await deferredPrompt.userChoice;
-        if (outcome === 'accepted') {
-          localStorage.setItem('dboy_app_installed_status', 'true');
-          const installBtn = document.getElementById('topInstallBtn');
-          if (installBtn) installBtn.style.display = 'none';
-        }
         deferredPrompt = null;
       } else {
-        alert("ಆಪ್ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು ನಿಮ್ಮ ಬ್ರೌಸರ್ ಮೆನು (⋮) ಬಳಸಿ 'Install app' ಆಯ್ಕೆಮಾಡಿ.");
+        alert("ಆಪ್ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು ನಿಮ್ಮ ಬ್ರೌಸರ್ ಮೆನು (⋮) ಬಳಸಿ 'Install app' ಅಥವಾ 'Add to Home screen' ಆಯ್ಕೆಮಾಡಿ.");
       }
     }
 
     window.addEventListener('DOMContentLoaded', () => {
       checkAppLiveStatus();
-      checkInstallStatus();
 
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./sw.js').catch(err => console.log("SW fail", err));
@@ -370,11 +363,6 @@
       if (dboy) {
         verifyDboyExistsInFirebase();
       }
-
-      window.history.pushState({ page: 'home' }, '', '');
-      window.addEventListener('popstate', () => {
-        window.history.pushState({ page: 'home' }, '', '');
-      });
     });
 
     function shareApp() {
