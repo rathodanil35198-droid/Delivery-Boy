@@ -567,7 +567,6 @@
         snapshot.forEach(docSnap => {
           const o = { docId: docSnap.id, ...docSnap.data() };
           
-          // ಇಲ್ಲಿ ತಾಲೂಕು ಮ್ಯಾಚಿಂಗ್ ಸಮಸ್ಯೆಯನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಸರಿಪಡಿಸಲಾಗಿದೆ (ಯಾವಾಗಲೂ ಆರ್ಡರ್ ಕಾಣುವಂತೆ)
           let isPackedReady = (o.status === 'STEP_3' || o.status === 'PACKING' || o.status === 'PACKED_READY');
 
           if (isPackedReady) {
@@ -710,6 +709,7 @@
 
         let returnStepHtml = '';
         if (!o.isReturnPickedUp) {
+          // ಇಲ್ಲಿ ರಿಟರ್ನ್ ಒಟಿಪಿ ಬಾಕ್ಸ್ ಅನ್ನು ದೊಡ್ಡದಾಗಿ (Full Width & Flex) ಸರಿಪಡಿಸಲಾಗಿದೆ
           returnStepHtml = `
             <div style="background:#ffebee; border:1px solid #ffcdd2; border-radius:6px; padding:8px; margin-bottom:8px; text-align:center;">
               <span style="font-size:0.75rem; color:#c62828; font-weight:bold;">🔄 ರಿಟರ್ನ್ ಆರ್ಡರ್ ಐಡಿ: ${o.orderId || 'OD0000'}</span>
