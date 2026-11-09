@@ -328,21 +328,18 @@
       }, 2000);
     });
 
-    // ಬ್ರೌಸರ್ ಬ್ಯಾಕ್ ಬಟನ್ ಒತ್ತಿದಾಗ ಆಪ್ ಮುಚ್ಚಿಹೋಗದಂತೆ ತಡೆಯಲು ಇತಿಹಾಸ ನಿರ್ವಹಣೆ
     window.history.pushState({ page: 'home' }, '', '');
     window.addEventListener('popstate', (e) => {
       window.history.pushState({ page: 'home' }, '', '');
       showTab('tasks');
     });
 
-    // ಇನ್‌ಸ್ಟಾಲ್ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ ಬಟನ್ ನಿಯಂತ್ರಿಸುವ ಮುಖ್ಯ ಫಂಕ್ಷನ್
     function checkInstallStatus() {
       const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
       const installBtn = document.getElementById('topInstallBtn');
       if (!installBtn) return;
 
       if (isStandalone) {
-        // ಆಪ್ ಮೊಬೈಲ್‌ನಲ್ಲಿ ಇನ್‌ಸ್ಟಾಲ್ ಆಗಿ ಓಪನ್ ಆಗಿದ್ದರೆ ಇನ್‌ಸ್ಟಾಲ್ ಬಟನ್ ಆಟೋಮ್ಯಾಟಿಕ್ ಆಗಿ ಮಾಯವಾಗುತ್ತದೆ
         installBtn.style.display = 'none';
       } else {
         installBtn.style.display = 'inline-flex';
@@ -376,7 +373,6 @@
     window.addEventListener('DOMContentLoaded', () => {
       checkAppLiveStatus();
       checkInstallStatus();
-
       window.addEventListener('resize', checkInstallStatus);
 
       if ('serviceWorker' in navigator) {
@@ -591,7 +587,8 @@
           let matchTaluk = (custTaluk === '' || dboyTaluk === '' || custTaluk === dboyTaluk || custTaluk.includes(dboyTaluk) || dboyTaluk.includes(custTaluk));
 
           if (matchTaluk) {
-            if (o.status === 'STEP_3' || o.status === 'PACKING') {
+            // ಇಲ್ಲಿ STEP_3 ಮತ್ತು PACKING ಸ್ಥಿತಿಯಲ್ಲಿರುವ ಆರ್ಡರ್‌ಗಳನ್ನು ಡೆಲಿವರಿ ಬಾಯ್‌ಗೆ ತೋರಿಸಲು ಸರಿಯಾಗಿ ಮ್ಯಾಚ್ ಮಾಡಲಾಗಿದೆ
+            if (o.status === 'STEP_3' || o.status === 'PACKING' || o.status === 'PACKED_READY') {
               if (!o.assignedDboyId || o.assignedDboyId === dboy.id) {
                 tasks.push(o);
               }
