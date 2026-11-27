@@ -84,9 +84,9 @@
     .splash-title { font-size: 1.8rem; font-weight: bold; text-shadow: 1px 2px 5px rgba(0,0,0,0.4); }
     .splash-sub { font-size: 0.9rem; opacity: 0.95; margin-top: 8px; font-weight: 500; }
 
-    .container { width: 100%; max-width: 480px; margin: 0 auto; background: #fff; padding: 15px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 30px; }
+    .container { width: 100%; max-width: 480px; margin: 0 auto; background: #fff; padding: 14px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 30px; }
 
-    header { background-color: var(--primary); color: white; padding: 12px 15px; text-align: center; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); position: relative; display: flex; align-items: center; justify-content: center; gap: 10px; }
+    header { background-color: var(--primary); color: white; padding: 12px 15px; text-align: center; border-radius: 10px; margin-bottom: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); position: relative; display: flex; align-items: center; justify-content: center; gap: 10px; }
     header img.logo-img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid white; background: #fff; }
     
     .support-bar { display: flex; justify-content: flex-end; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
@@ -101,72 +101,52 @@
       100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(46, 125, 50, 0); }
     }
 
-    h2 { font-size: 1rem; margin-bottom: 10px; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 5px; }
+    h2 { font-size: 0.98rem; margin-bottom: 10px; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 5px; }
     
-    .form-group { margin-bottom: 12px; }
+    .form-group { margin-bottom: 10px; }
     label { display: block; font-size: 0.8rem; font-weight: 700; margin-bottom: 4px; color: #4a5568; }
-    input, select { width: 100%; padding: 10px; border: 2px solid #cbd5e0; border-radius: 8px; font-size: 0.9rem; background: #fff; }
+    input, select { width: 100%; padding: 9px; border: 2px solid #cbd5e0; border-radius: 8px; font-size: 0.88rem; background: #fff; }
 
-    .btn { width: 100%; padding: 12px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 0.95rem; color: white; background: var(--primary); }
+    .btn { width: 100%; padding: 11px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 0.9rem; color: white; background: var(--primary); }
     .btn-success { background: var(--success); }
     .btn-danger { background: var(--danger); }
     .btn-warning { background: var(--warning); }
-    .btn-call { background: #388e3c; color: #fff; padding: 7px 10px; border-radius: 6px; text-decoration: none; font-size: 0.78rem; font-weight: bold; display: inline-flex; align-items: center; justify-content: center; gap: 4px; flex: 1; }
-    .btn-shop-call { background: #e65100; color: #fff; padding: 7px 10px; border-radius: 6px; text-decoration: none; font-size: 0.78rem; font-weight: bold; display: inline-flex; align-items: center; justify-content: center; gap: 4px; flex: 1; }
-    .btn-pickup { background: #2874f0; color: #fff; border: none; padding: 10px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: bold; cursor: pointer; }
-    .btn-deliver { background: #388e3c; color: #fff; border: none; padding: 10px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: bold; cursor: pointer; }
-    .btn-cancel-order { background: #d32f2f; color: #fff; border: none; padding: 9px 12px; border-radius: 6px; font-size: 0.82rem; font-weight: bold; cursor: pointer; width: 100%; margin-top: 8px; }
+    .btn-call { background: #388e3c; color: #fff; padding: 6px 8px; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: bold; display: inline-flex; align-items: center; justify-content: center; gap: 3px; flex: 1; }
+    .btn-shop-call { background: #e65100; color: #fff; padding: 6px 8px; border-radius: 6px; text-decoration: none; font-size: 0.75rem; font-weight: bold; display: inline-flex; align-items: center; justify-content: center; gap: 3px; flex: 1; }
+    .btn-pickup { background: #2874f0; color: #fff; border: none; padding: 9px 12px; border-radius: 6px; font-size: 0.82rem; font-weight: bold; cursor: pointer; white-space: nowrap; }
+    .btn-deliver { background: #388e3c; color: #fff; border: none; padding: 9px 12px; border-radius: 6px; font-size: 0.82rem; font-weight: bold; cursor: pointer; white-space: nowrap; }
+    .btn-cancel-order { background: #d32f2f; color: #fff; border: none; padding: 8px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: bold; cursor: pointer; width: 100%; margin-top: 6px; }
 
     .id-card {
       background: linear-gradient(135deg, #e65100, #ef6c00);
-      color: white; border-radius: 10px; padding: 15px; margin-bottom: 15px;
-      display: flex; gap: 15px; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      color: white; border-radius: 10px; padding: 14px; margin-bottom: 12px;
+      display: flex; gap: 12px; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-    .id-card img { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; }
-    .id-card-details h3 { font-size: 1rem; margin-bottom: 3px; }
-    .id-card-details p { font-size: 0.75rem; opacity: 0.9; }
-    .id-number { font-size: 1rem; font-weight: bold; background: #fff; color: #e65100; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-top: 4px; }
+    .id-card img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; }
+    .id-card-details h3 { font-size: 0.98rem; margin-bottom: 2px; }
+    .id-card-details p { font-size: 0.74rem; opacity: 0.92; }
+    .id-number { font-size: 0.95rem; font-weight: bold; background: #fff; color: #e65100; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-top: 4px; }
 
     .stats-container { display: flex; gap: 6px; margin-bottom: 12px; }
     .stat-box { flex: 1; background: #fff3e0; padding: 8px; border-radius: 8px; text-align: center; border: 1px solid #ffe0b2; cursor: pointer; }
     .stat-box h4 { font-size: 0.65rem; color: #e65100; margin-bottom: 2px; }
-    .stat-box p { font-size: 0.8rem; font-weight: bold; color: #bf360c; }
+    .stat-box p { font-size: 0.82rem; font-weight: bold; color: #bf360c; }
 
-    .order-item { border-left: 5px solid var(--primary); background: #f9f9f9; padding: 12px; margin-bottom: 12px; border-radius: 8px; font-size: 0.85rem; border: 1px solid #e0e0e0; border-left-width: 5px; }
+    .order-item { border-left: 5px solid var(--primary); background: #f9f9f9; padding: 10px; margin-bottom: 10px; border-radius: 8px; font-size: 0.8rem; border: 1px solid #e0e0e0; border-left-width: 5px; }
 
-    .shop-full-box { background: #fff8e1; padding: 9px; border-radius: 7px; border: 1px solid #ffcc80; margin-top: 8px; }
-    .shop-compact-bar { background: #fff3e0; padding: 7px 10px; border-radius: 7px; border: 1px solid #ffe0b2; margin-top: 8px; display: flex; justify-content: space-between; align-items: center; gap: 6px; font-size: 0.78rem; }
-    .cust-full-box { background: #e8f5e9; padding: 10px; border-radius: 8px; border: 1.5px solid #81c784; margin-top: 8px; line-height: 1.45; }
+    .compact-box { padding: 7px 9px; border-radius: 7px; margin-top: 6px; font-size: 0.77rem; line-height: 1.35; }
+    .shop-box { background: #fff8e1; border: 1px solid #ffcc80; }
+    .cust-box { background: #e8f5e9; border: 1px solid #81c784; }
+    .otp-row { display: flex; gap: 6px; align-items: center; margin-top: 6px; }
+    .otp-input { flex: 1; min-width: 90px; padding: 8px; font-size: 1rem; border: 1.5px solid #90a4ae; border-radius: 6px; text-align: center; font-weight: bold; letter-spacing: 2px; background: #fff; }
 
-    .pay-badge { display: inline-block; padding: 4px 8px; border-radius: 5px; font-size: 0.76rem; font-weight: bold; margin-top: 5px; }
-    .pay-cod { background: #fff3e0; color: #e65100; border: 1px solid #ffcc80; }
-    .pay-upi { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
-    .pay-no-money { background: #e3f2fd; color: #0d47a1; border: 1px solid #90caf9; }
-
-    .exchange-alert-box {
-      background: #e1f5fe;
-      border: 2px solid #0288d1;
-      border-radius: 8px;
-      padding: 9px;
-      margin-bottom: 8px;
-      color: #01579b;
-      font-size: 0.8rem;
-      line-height: 1.4;
-    }
-    .return-alert-box {
-      background: #ffebee;
-      border: 2px solid #d32f2f;
-      border-radius: 8px;
-      padding: 8px;
-      margin-bottom: 8px;
-      color: #b71c1c;
-      font-size: 0.82rem;
-      font-weight: 800;
-      text-align: center;
-    }
+    .tag-exchange { display: inline-block; background: #e1f5fe; color: #01579b; border: 1px solid #0288d1; padding: 4px 7px; border-radius: 5px; font-size: 0.74rem; font-weight: 800; margin-top: 5px; }
+    .tag-return { display: inline-block; background: #ffebee; color: #b71c1c; border: 1px solid #ef9a9a; padding: 4px 7px; border-radius: 5px; font-size: 0.74rem; font-weight: 800; margin-top: 5px; }
+    .tag-money { display: inline-block; background: #fff3e0; color: #e65100; border: 1px solid #ffcc80; padding: 3px 7px; border-radius: 5px; font-size: 0.73rem; font-weight: 800; margin-top: 4px; }
+    .tag-nomoney { display: inline-block; background: #e8f5e9; color: #1b5e20; border: 1px solid #a5d6a7; padding: 3px 7px; border-radius: 5px; font-size: 0.73rem; font-weight: 800; margin-top: 4px; }
 
     .modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.85); text-align: center; padding: 20px; overflow-y: auto; justify-content: center; align-items: center; }
-    .modal-content-box { background: #fff; max-width: 380px; margin: auto; padding: 25px; border-radius: 14px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.4); }
+    .modal-content-box { background: #fff; max-width: 380px; margin: auto; padding: 22px; border-radius: 14px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.4); }
 
     #serverDownOverlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 99999; display: none; justify-content: center; align-items: center; padding: 20px; text-align: center; color: white; }
   </style>
@@ -218,18 +198,18 @@
     </header>
 
     <!-- ಲಾಗಿನ್ ಸೆಕ್ಷನ್ -->
-    <div id="loginSection" style="background:#fff3e0; padding:15px; border-radius:10px; border:1px solid #ffe0b2;">
+    <div id="loginSection" style="background:#fff3e0; padding:14px; border-radius:10px; border:1px solid #ffe0b2;">
       <h2>🔑 ಡೆಲಿವರಿ ಬಾಯ್ ಲಾಗಿನ್ / ನೋಂದಣಿ</h2>
       
-      <div style="margin-bottom: 15px; background: #fff; padding: 12px; border-radius: 8px; border: 1px solid #ffe0b2;">
-        <label style="font-size:0.85rem; color:#e65100; font-weight:bold; margin-bottom:6px;">ನಿಮ್ಮ 4-ಡಿಜಿಟ್ ಐಡಿ ಹಾಕಿ ಲಾಗಿನ್ ಮಾಡಿ:</label>
+      <div style="margin-bottom: 12px; background: #fff; padding: 10px; border-radius: 8px; border: 1px solid #ffe0b2;">
+        <label style="font-size:0.82rem; color:#e65100; font-weight:bold; margin-bottom:5px;">ನಿಮ್ಮ 4-ಡಿಜಿಟ್ ಐಡಿ ಹಾಕಿ ಲಾಗಿನ್ ಮಾಡಿ:</label>
         <div style="display:flex; gap:8px;">
-          <input type="tel" inputmode="numeric" id="existingIdInput" placeholder="ಉದಾ: 8010" style="width:100%; padding:14px; font-size:1.4rem; font-weight:bold; text-align:center; border:2px solid #e65100; border-radius:8px; letter-spacing: 3px; background:#fff; color:#000;">
-          <button type="button" class="btn btn-warning" style="padding:10px 18px; font-size:0.95rem; font-weight:bold;" onclick="loginWithExistingId()">ಲಾಗಿನ್</button>
+          <input type="tel" inputmode="numeric" id="existingIdInput" placeholder="ಉದಾ: 8010" style="width:100%; padding:12px; font-size:1.3rem; font-weight:bold; text-align:center; border:2px solid #e65100; border-radius:8px; letter-spacing: 3px; background:#fff; color:#000;">
+          <button type="button" class="btn btn-warning" style="padding:10px 16px; font-size:0.9rem; font-weight:bold;" onclick="loginWithExistingId()">ಲಾಗಿನ್</button>
         </div>
       </div>
 
-      <hr style="margin: 15px 0; border:0; border-top:1px solid #ffe0b2;">
+      <hr style="margin: 12px 0; border:0; border-top:1px solid #ffe0b2;">
 
       <h2 style="font-size:0.95rem;">📝 ಹೊಸ ಡೆಲಿವರಿ ಬಾಯ್ ನೋಂದಣಿ</h2>
       <form onsubmit="registerDboy(event)">
@@ -237,38 +217,38 @@
         <div class="form-group"><label>ತಂದೆಯ ಹೆಸರು:</label><input type="text" id="dboyFatherName" required placeholder="ತಂದೆಯ ಹೆಸರು"></div>
         <div class="form-group"><label>ಮೊಬೈಲ್ ನಂಬರ್:</label><input type="tel" id="dboyPhone" required placeholder="ಮೊಬೈಲ್ ಸಂಖ್ಯೆ"></div>
         
-        <div style="display:flex; gap:10px;">
+        <div style="display:flex; gap:8px;">
           <div class="form-group" style="flex:1;"><label>ಜಿಲ್ಲೆ:</label><input type="text" id="district" value="ಯಾದಗಿರಿ" required></div>
           <div class="form-group" style="flex:1;"><label>ತಾಲೂಕು:</label><input type="text" id="taluk" value="ಶಹಾಪುರ" required></div>
         </div>
 
-        <div style="display:flex; gap:10px;">
+        <div style="display:flex; gap:8px;">
           <div class="form-group" style="flex:1;"><label>ಊರು:</label><input type="text" id="village" required placeholder="ನಿಮ್ಮ ಊರು"></div>
           <div class="form-group" style="flex:1;"><label>ಪಿನ್ ಕೋಡ್:</label><input type="number" id="pincode" required placeholder="ಪಿನ್ ಕೋಡ್"></div>
         </div>
 
         <div class="form-group">
-          <label>ಯುಪಿಐ ಐಡಿ (UPI ID for Payment):</label>
-          <input type="text" id="upiIdInput" required placeholder="ಉದಾ: yourname@paytm ಅಥವಾ gpay number">
+          <label>ಯುಪಿಐ ಐಡಿ (UPI ID):</label>
+          <input type="text" id="upiIdInput" required placeholder="ಉದಾ: yourname@paytm">
         </div>
 
         <div class="form-group">
-          <label>ನಿಮ್ಮ ಕ್ಯೂಆರ್ ಕೋಡ್ ಫೋಟೋ (QR Code - ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್‌ನಲ್ಲಿ ಕಾಣುತ್ತದೆ):</label>
+          <label>ಕ್ಯೂಆರ್ ಕೋಡ್ ಫೋಟೋ (QR Code):</label>
           <input type="file" accept="image/*" id="dboyQrFile">
         </div>
 
         <div class="form-group">
-          <label>ಆಧಾರ್ ಕಾರ್ಡ್ ಮುಂಭಾಗದ ಫೋಟೋ (Front):</label>
+          <label>ಆಧಾರ್ ಕಾರ್ಡ್ ಮುಂಭಾಗ (Front):</label>
           <input type="file" accept="image/*" capture="environment" id="aadhaarFrontFile" required>
         </div>
 
         <div class="form-group">
-          <label>ಆಧಾರ್ ಕಾರ್ಡ್ ಹಿಂಭಾಗದ ಫೋಟೋ (Back):</label>
+          <label>ಆಧಾರ್ ಕಾರ್ಡ್ ಹಿಂಭಾಗ (Back):</label>
           <input type="file" accept="image/*" capture="environment" id="aadhaarBackFile" required>
         </div>
 
         <div class="form-group">
-          <label>ನಿಮ್ಮ ಸೆಲ್ಫಿ ಫೋಟೋ (Selfie):</label>
+          <label>ಸೆಲ್ಫಿ ಫೋಟೋ (Selfie):</label>
           <input type="file" accept="image/*" capture="user" id="dboyPhotoFile" required>
         </div>
 
@@ -288,55 +268,53 @@
         </div>
       </div>
 
-      <!-- ಕ್ಯೂಆರ್ ಕೋಡ್ ಅಪ್‌ಡೇಟ್ / ವೀಕ್ಷಣೆ ಪೆಟ್ಟಿಗೆ (ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್ ಸಿಂಕ್) -->
-      <div style="background:#f3e5f5; border:1px solid #ce93d8; border-radius:8px; padding:8px 10px; margin-bottom:12px; font-size:0.78rem;">
-        <div style="display:flex; justify-content:space-between; align-items:center; gap:6px; flex-wrap:wrap;">
-          <span><b>📱 QR ಕೋಡ್ (ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್):</b> <span id="qrUploadStatusText" style="color:#4a148c;">ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ...</span></span>
-          <label style="margin:0; background:#7b1fa2; color:#fff; padding:4px 8px; border-radius:5px; font-size:0.72rem; cursor:pointer;">
-            📷 QR ಹಾಕಿ / ಬದಲಿಸಿ
-            <input type="file" accept="image/*" id="dashboardQrFileInput" style="display:none;" onchange="updateDboyQrPhoto(this)">
-          </label>
-        </div>
+      <!-- QR ಕೋಡ್ ಅಪ್‌ಡೇಟ್ -->
+      <div style="background:#f3e5f5; border:1px solid #ce93d8; border-radius:8px; padding:7px 10px; margin-bottom:10px; font-size:0.75rem; display:flex; justify-content:space-between; align-items:center; gap:6px;">
+        <span><b>📱 QR:</b> <span id="qrUploadStatusText">ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ...</span></span>
+        <label style="margin:0; background:#7b1fa2; color:#fff; padding:4px 8px; border-radius:5px; font-size:0.7rem; cursor:pointer;">
+          📷 QR ಹಾಕಿ
+          <input type="file" accept="image/*" id="dashboardQrFileInput" style="display:none;" onchange="updateDboyQrPhoto(this)">
+        </label>
       </div>
 
       <!-- Stats Box -->
       <div class="stats-container">
         <div class="stat-box" onclick="showTab('tasks')">
-          <h4>ಡೆಲಿವರಿ ಆರ್ಡರ್ (Orders)</h4>
+          <h4>ಆರ್ಡರ್ (Orders)</h4>
           <p id="statTodayCount">0</p>
         </div>
         <div class="stat-box" onclick="showTab('returns')">
-          <h4>ರಿಟರ್ನ್ ಆರ್ಡರ್ (Returns)</h4>
+          <h4>ರಿಟರ್ನ್ (Returns)</h4>
           <p id="statReturnCount" style="color:var(--danger);">0</p>
         </div>
         <div class="stat-box" onclick="openPaymentModal()">
-          <h4>ಒಟ್ಟು ಪೇಮೆಂಟ್ (Payment)</h4>
+          <h4>ಪೇಮೆಂಟ್ (Payment)</h4>
           <p id="statPendingPayment" style="color:#1976d2;">₹0</p>
         </div>
       </div>
 
-      <div style="display:flex; gap:6px; margin-bottom:15px;">
-        <button class="btn btn-warning" style="flex:1; font-size:0.75rem;" onclick="showTab('tasks')">📦 ಹೊಸ ಟಾಸ್ಕ್ (<span id="taskCount">0</span>)</button>
-        <button class="btn btn-danger" style="flex:1; font-size:0.75rem;" onclick="showTab('returns')">🔄 ರಿಟರ್ನ್ ಆರ್ಡರ್ (<span id="returnTaskCount">0</span>)</button>
-        <button class="btn btn-success" style="flex:1; font-size:0.75rem;" onclick="showTab('history')">📜 ಹಿಸ್ಟರಿ</button>
+      <div style="display:flex; gap:6px; margin-bottom:12px;">
+        <button class="btn btn-warning" style="flex:1; font-size:0.74rem; padding:9px 4px;" onclick="showTab('tasks')">📦 ಆರ್ಡರ್ (<span id="taskCount">0</span>)</button>
+        <button class="btn btn-danger" style="flex:1; font-size:0.74rem; padding:9px 4px;" onclick="showTab('returns')">🔄 ರಿಟರ್ನ್ (<span id="returnTaskCount">0</span>)</button>
+        <button class="btn btn-success" style="flex:1; font-size:0.74rem; padding:9px 4px;" onclick="showTab('history')">📜 ಹಿಸ್ಟರಿ</button>
       </div>
 
       <!-- ಹೊಸ ಟಾಸ್ಕ್‌ಗಳು -->
-      <div id="tabTasks" style="background:#fff; padding:15px; border-radius:10px; border:1px solid #cbd5e0;">
-        <h2>📦 ಅಂಗಡಿಗಳಿಂದ ಪ್ಯಾಕ್ ಆಗಿರುವ ಹೊಸ ಟಾಸ್ಕ್‌ಗಳು</h2>
-        <div id="dboyTasksList" style="margin-top:10px;"></div>
+      <div id="tabTasks" style="background:#fff; padding:12px; border-radius:10px; border:1px solid #cbd5e0;">
+        <h2>📦 ಹೊಸ ಡೆಲಿವರಿ / ಎಕ್ಸ್ಚೇಂಜ್ ಟಾಸ್ಕ್</h2>
+        <div id="dboyTasksList" style="margin-top:8px;"></div>
       </div>
 
       <!-- ರಿಟರ್ನ್ ಆರ್ಡರ್ ಟ್ಯಾಬ್ -->
-      <div id="tabReturns" style="display:none; background:#fff; padding:15px; border-radius:10px; border:1px solid #cbd5e0;">
-        <h2>🔄 ಗ್ರಾಹಕರಿಂದ ರಿಟರ್ನ್ ಬಂದಿರುವ ಆರ್ಡರ್‌ಗಳು</h2>
-        <div id="dboyReturnTasksList" style="margin-top:10px;"></div>
+      <div id="tabReturns" style="display:none; background:#fff; padding:12px; border-radius:10px; border:1px solid #cbd5e0;">
+        <h2>🔄 ರಿಟರ್ನ್ / ಎಕ್ಸ್ಚೇಂಜ್ ಆರ್ಡರ್</h2>
+        <div id="dboyReturnTasksList" style="margin-top:8px;"></div>
       </div>
 
       <!-- ಹಿಸ್ಟರಿ -->
-      <div id="tabHistory" style="display:none; background:#fff; padding:15px; border-radius:10px; border:1px solid #cbd5e0;">
-        <h2>📜 ಪೂರ್ಣಗೊಂಡ ಡೆಲಿವರಿ & ರಿಟರ್ನ್ ಹಿಸ್ಟರಿ</h2>
-        <div id="dboyHistoryList" style="margin-top:10px;"></div>
+      <div id="tabHistory" style="display:none; background:#fff; padding:12px; border-radius:10px; border:1px solid #cbd5e0;">
+        <h2>📜 ಹಿಸ್ಟರಿ</h2>
+        <div id="dboyHistoryList" style="margin-top:8px;"></div>
       </div>
 
     </div>
@@ -345,13 +323,11 @@
   <!-- ಪೇಮೆಂಟ್ ಮೋಡಲ್ -->
   <div id="paymentModal" class="modal">
     <div class="modal-content-box">
-      <h3 style="color:var(--primary); margin-bottom:10px;">💰 ಡೆಲಿವರಿ & ರಿಟರ್ನ್ ಪೇಮೆಂಟ್ ವಿವರ</h3>
-      <p style="font-size:0.85rem; color:#555; margin-bottom:15px;" id="paymentBreakdownText">ಡೆಲಿವರಿ ಚಾರ್ಜ್ ಹಾಗೂ ರಿಟರ್ನ್ ಚಾರ್ಜ್ ಲೆಕ್ಕಾಚಾರ:</p>
-      
-      <div style="font-size:1.8rem; font-weight:bold; color:var(--success); background:#e8f5e9; padding:15px; border-radius:8px; margin-bottom:15px;" id="modalTotalPayAmount">₹0</div>
-      
-      <button class="btn btn-success" onclick="payDeliveryEarnings()" style="margin-bottom:8px;">ಪಾವತಿ ಸ್ವೀಕರಿಸಿ (Pay / Clear)</button>
-      <button class="btn btn-danger" onclick="closePaymentModal()">ಮುಚ್ಚಿ (Close)</button>
+      <h3 style="color:var(--primary); margin-bottom:10px;">💰 ಪೇಮೆಂಟ್ ವಿವರ</h3>
+      <p style="font-size:0.82rem; color:#555; margin-bottom:12px;" id="paymentBreakdownText"></p>
+      <div style="font-size:1.7rem; font-weight:bold; color:var(--success); background:#e8f5e9; padding:12px; border-radius:8px; margin-bottom:12px;" id="modalTotalPayAmount">₹0</div>
+      <button class="btn btn-success" onclick="payDeliveryEarnings()" style="margin-bottom:8px;">ಪಾವತಿ ಸ್ವೀಕರಿಸಿ</button>
+      <button class="btn btn-danger" onclick="closePaymentModal()">ಮುಚ್ಚಿ</button>
     </div>
   </div>
 
@@ -372,7 +348,6 @@
         .trim();
     }
 
-    // ಜಿಲ್ಲೆ ಮತ್ತು ತಾಲೂಕು ಸಂಬಂಧ ಪರಿಶೀಲನೆ (ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್ / ಆರ್ಡರ್ / ಅಂಗಡಿ / ಡೆಲಿವರಿ ಬಾಯ್)
     function isSameDistrictAndTaluk(orderObj, boyObj) {
       if (!boyObj) return true;
       const boyTaluk = normalizeRegion(boyObj.taluk || boyObj.assignedTaluk || '');
@@ -385,7 +360,6 @@
         orderObj.assignedDistrict || orderObj.shopDistrict || orderObj.district || orderObj.customer?.district || ''
       );
 
-      // ನಿರ್ದಿಷ್ಟವಾಗಿ ಈ ಡೆಲಿವರಿ ಬಾಯ್‌ಗೆ ಮಾತ್ರ ಆರ್ಡರ್ ಕಳುಹಿಸಿದ್ದರೆ
       if (orderObj.deliveryBoyId && String(orderObj.deliveryBoyId) === String(boyObj.id)) return true;
       if (orderObj.assignedDboyId && String(orderObj.assignedDboyId) === String(boyObj.id)) return true;
       if (orderObj.returnDboyId && String(orderObj.returnDboyId) === String(boyObj.id)) return true;
@@ -422,7 +396,7 @@
     });
 
     window.history.pushState({ page: 'home' }, '', '');
-    window.addEventListener('popstate', (e) => {
+    window.addEventListener('popstate', () => {
       window.history.pushState({ page: 'home' }, '', '');
       showTab('tasks');
     });
@@ -431,12 +405,7 @@
       const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
       const installBtn = document.getElementById('topInstallBtn');
       if (!installBtn) return;
-
-      if (isStandalone) {
-        installBtn.style.display = 'none';
-      } else {
-        installBtn.style.display = 'inline-flex';
-      }
+      installBtn.style.display = isStandalone ? 'none' : 'inline-flex';
     }
 
     window.addEventListener('beforeinstallprompt', (e) => {
@@ -459,20 +428,17 @@
           checkInstallStatus();
         }
       } else {
-        alert("ಆಪ್ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು ನಿಮ್ಮ ಬ್ರೌಸರ್ ಮೆನು (⋮) ಬಳಸಿ 'Install app' ಅಥವಾ 'Add to Home screen' ಆಯ್ಕೆಮಾಡಿ.");
+        alert("ಆಪ್ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು ಬ್ರೌಸರ್ ಮೆನು (⋮) ಬಳಸಿ 'Install app' ಆಯ್ಕೆಮಾಡಿ.");
       }
     }
 
     window.addEventListener('DOMContentLoaded', () => {
       checkAppLiveStatus();
       checkInstallStatus();
-
       window.addEventListener('resize', checkInstallStatus);
-
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js').catch(err => console.log("SW fail", err));
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
       }
-
       if (dboy) {
         verifyDboyExistsInFirebase();
       }
@@ -482,11 +448,11 @@
       if (navigator.share) {
         navigator.share({
           title: 'ನಮ್ಮ ಊರು ಶಾಪಿಂಗ್ ಡೆಲಿವರಿ ಬಾಯ್',
-          text: 'ನಮ್ಮ ಊರು ಶಾಪಿಂಗ್ ಡೆಲಿವರಿ ಬಾಯ್ ಆಪ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ:',
+          text: 'ನಮ್ಮ ಊರು ಶಾಪಿಂಗ್ ಡೆಲಿವರಿ ಬಾಯ್ ಆಪ್:',
           url: window.location.href,
-        }).catch(console.error);
+        }).catch(() => {});
       } else {
-        prompt("ಈ ಲಿಂಕ್ ಅನ್ನು ಕಾಪಿ ಮಾಡಿ ಶೇರ್ ಮಾಡಿ:", window.location.href);
+        prompt("ಲಿಂಕ್ ಕಾಪಿ ಮಾಡಿ:", window.location.href);
       }
     }
 
@@ -494,12 +460,7 @@
       window.onSnapshot(window.doc(window.db, "settings", "instapp_control"), (docSnap) => {
         if (docSnap.exists()) {
           const data = docSnap.data();
-          if (data.isOnline === false) {
-            document.getElementById('serverDownMsg').innerText = "ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್‌ನಿಂದ ಸಿಸ್ಟಮ್ ಅನ್ನು ಬಂದ್ (OFF) ಮಾಡಲಾಗಿದೆ. ದಯವಿಟ್ಟು ನಂತರ ಪ್ರಯತ್ನಿಸಿ.";
-            document.getElementById('serverDownOverlay').style.display = 'flex';
-          } else {
-            document.getElementById('serverDownOverlay').style.display = 'none';
-          }
+          document.getElementById('serverDownOverlay').style.display = (data.isOnline === false) ? 'flex' : 'none';
         }
       });
 
@@ -519,7 +480,7 @@
         const deletedDoc = await window.getDoc(window.doc(window.db, "deleted_dboys", dboy.id));
         if (deletedDoc.exists()) {
           localStorage.removeItem('my_dboy_session');
-          document.getElementById('serverDownMsg').innerText = "ನಿಮ್ಮ ಡೆಲಿವರಿ ಬಾಯ್ ಐಡಿಯನ್ನು ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್‌ನಿಂದ ಸಂಪೂರ್ಣವಾಗಿ ಡಿಲೀಟ್ ಮಾಡಲಾಗಿದೆ. ಇದು ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ.";
+          document.getElementById('serverDownMsg').innerText = "ನಿಮ್ಮ ಡೆಲಿವರಿ ಬಾಯ್ ಐಡಿಯನ್ನು ಡಿಲೀಟ್ ಮಾಡಲಾಗಿದೆ.";
           document.getElementById('serverDownOverlay').style.display = 'flex';
           return;
         }
@@ -528,12 +489,11 @@
         const snap = await window.getDocs(q);
         if (snap.empty) {
           localStorage.removeItem('my_dboy_session');
-          document.getElementById('serverDownMsg').innerText = "ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗಿದೆ.";
+          document.getElementById('serverDownMsg').innerText = "ನಿಮ್ಮ ಖಾತೆಯನ್ನು ತೆಗೆದುಹಾಕಲಾಗಿದೆ.";
           document.getElementById('serverDownOverlay').style.display = 'flex';
         } else {
           snap.forEach(docSnap => {
-            const freshData = docSnap.data();
-            dboy = { ...dboy, ...freshData, loginTime: dboy.loginTime || Date.now() };
+            dboy = { ...dboy, ...docSnap.data(), loginTime: dboy.loginTime || Date.now() };
           });
           localStorage.setItem('my_dboy_session', JSON.stringify(dboy));
           renderIDCard();
@@ -541,7 +501,7 @@
           document.getElementById('dashboardSection').style.display = 'block';
           startRealtimeTasks();
         }
-      } catch(e) { console.log(e); }
+      } catch (e) { console.log(e); }
     }
 
     function logoutDboy() {
@@ -575,22 +535,15 @@
 
     async function registerDboy(e) {
       e.preventDefault();
-      const photoFile = document.getElementById('dboyPhotoFile').files[0];
-      const frontFile = document.getElementById('aadhaarFrontFile').files[0];
-      const backFile = document.getElementById('aadhaarBackFile').files[0];
-      const qrFile = document.getElementById('dboyQrFile').files[0];
-
-      const photoBase64 = await convertFileToBase64(photoFile);
-      const frontBase64 = await convertFileToBase64(frontFile);
-      const backBase64 = await convertFileToBase64(backFile);
-      const qrBase64 = await convertFileToBase64(qrFile);
+      const photoBase64 = await convertFileToBase64(document.getElementById('dboyPhotoFile').files[0]);
+      const frontBase64 = await convertFileToBase64(document.getElementById('aadhaarFrontFile').files[0]);
+      const backBase64 = await convertFileToBase64(document.getElementById('aadhaarBackFile').files[0]);
+      const qrBase64 = await convertFileToBase64(document.getElementById('dboyQrFile').files[0]);
 
       const fourDigitId = Math.floor(1000 + Math.random() * 9000).toString();
-      const nowMs = Date.now();
       const distVal = document.getElementById('district').value.trim();
       const talukVal = document.getElementById('taluk').value.trim();
 
-      // ಸೆಲ್ಫಿ, ಆಧಾರ್ ಫ್ರಂಟ್, ಆಧಾರ್ ಬ್ಯಾಕ್ ಮತ್ತು QR ಕೋಡ್ ಎಲ್ಲವನ್ನೂ ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್‌ನಲ್ಲಿ ಕಾಣುವಂತೆ ಫೀಲ್ಡ್‌ಗಳಲ್ಲಿ ಸೇವ್ ಮಾಡಲಾಗುತ್ತದೆ
       dboy = {
         id: fourDigitId,
         name: document.getElementById('dboyName').value.trim(),
@@ -610,7 +563,7 @@
         aadhaarBack: backBase64 || '',
         qrPhoto: qrBase64 || '',
         qrCodePhoto: qrBase64 || '',
-        loginTime: nowMs,
+        loginTime: Date.now(),
         createdAt: serverTimestamp()
       };
 
@@ -640,29 +593,23 @@
         dboy.qrCodePhoto = qrBase64;
         localStorage.setItem('my_dboy_session', JSON.stringify(dboy));
         renderIDCard();
-        alert("✅ ನಿಮ್ಮ QR ಕೋಡ್ ಸೇವ್ ಆಗಿದೆ — ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್‌ನಲ್ಲಿ ನಿಮ್ಮ ಐಡಿ ಹತ್ತಿರ ಕಾಣಿಸುತ್ತದೆ!");
-      } catch (err) {
-        alert("QR ಸೇವ್ ಮಾಡಲು ದೋಷ: " + err.message);
-      }
+        alert("✅ QR ಕೋಡ್ ಸೇವ್ ಆಗಿದೆ!");
+      } catch (err) { alert("ದೋಷ: " + err.message); }
     }
 
     async function loginWithExistingId() {
       const idVal = document.getElementById('existingIdInput').value.trim();
-      if (!idVal) {
-        alert("ದಯವಿಟ್ಟು ನಿಮ್ಮ 4-ಡಿಜಿಟ್ ಐಡಿ ನಮೂದಿಸಿ.");
-        return;
-      }
+      if (!idVal) { alert("4-ಡಿಜಿಟ್ ಐಡಿ ಹಾಕಿ."); return; }
 
       try {
         const deletedDoc = await window.getDoc(window.doc(window.db, "deleted_dboys", idVal));
         if (deletedDoc.exists()) {
-          alert("❌ ಈ ಐಡಿಯನ್ನು ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್‌ನಿಂದ ಡಿಲೀಟ್ ಮಾಡಲಾಗಿದೆ. ಇದು ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ.");
+          alert("❌ ಈ ಐಡಿಯನ್ನು ಡಿಲೀಟ್ ಮಾಡಲಾಗಿದೆ.");
           return;
         }
 
         const q = window.query(window.collection(window.db, "delivery_boys"), window.where("id", "==", String(idVal)));
         const snap = await window.getDocs(q);
-
         if (!snap.empty) {
           snap.forEach(docSnap => {
             dboy = { ...docSnap.data(), loginTime: Date.now() };
@@ -671,12 +618,11 @@
             document.getElementById('loginSection').style.display = 'none';
             document.getElementById('dashboardSection').style.display = 'block';
             startRealtimeTasks();
-            alert("🎉 ನಿಮ್ಮ ಐಡಿ ಯಶಸ್ವಿಯಾಗಿ ಲಾಗಿನ್ ಆಗಿದೆ!");
           });
         } else {
-          alert("ಈ ಐಡಿಗೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದೇ ಡೆಲಿವರಿ ಬಾಯ್ ಕಂಡುಬಂದಿಲ್ಲ. ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್‌ನಲ್ಲಿ ರಿಜಿಸ್ಟರ್ ಆಗಿರುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.");
+          alert("ಈ ಐಡಿ ಕಂಡುಬಂದಿಲ್ಲ.");
         }
-      } catch (err) { alert("ಲಾಗಿನ್ ದೋಷ: " + err.message); }
+      } catch (err) { alert("ದೋಷ: " + err.message); }
     }
 
     function closeSuccessModal() {
@@ -697,7 +643,7 @@
       const qrStatusEl = document.getElementById('qrUploadStatusText');
       if (qrStatusEl) {
         const hasQr = Boolean((dboy.qrPhoto && dboy.qrPhoto.length > 50) || (dboy.qrCodePhoto && dboy.qrCodePhoto.length > 50));
-        qrStatusEl.innerText = hasQr ? "✔ ಅಪ್‌ಲೋಡ್ ಆಗಿದೆ" : "❌ ಇನ್ನೂ ಹಾಕಿಲ್ಲ";
+        qrStatusEl.innerText = hasQr ? "✔ ಸೇವ್ ಆಗಿದೆ" : "❌ ಇಲ್ಲ";
       }
     }
 
@@ -708,7 +654,7 @@
     }
 
     function openPaymentModal() {
-      document.getElementById('paymentBreakdownText').innerHTML = currentPaymentBreakdown || "ಡೆಲಿವರಿ ಚಾರ್ಜ್ ಹಾಗೂ ರಿಟರ್ನ್ ಚಾರ್ಜ್ ಲೆಕ್ಕಾಚಾರ:";
+      document.getElementById('paymentBreakdownText').innerHTML = currentPaymentBreakdown;
       document.getElementById('modalTotalPayAmount').innerText = `₹${currentTotalEarnings}`;
       document.getElementById('paymentModal').style.display = 'flex';
     }
@@ -718,7 +664,7 @@
     }
 
     function payDeliveryEarnings() {
-      alert("✅ ಪಾವತಿ ಯಶಸ್ವಿಯಾಗಿ ಪ್ರಕ್ರಿಯೆಗೊಂಡಿದೆ!");
+      alert("✅ ಪಾವತಿ ಸ್ವೀಕರಿಸಲಾಗಿದೆ!");
       closePaymentModal();
     }
 
@@ -734,10 +680,7 @@
         ? Number(o.returnCharge || returnChargeRate || 30)
         : Number(o.deliveryCharge || deliveryChargeRate || 50);
       const pct = Number(o.dboyCommissionPercent || dboyCommissionPercent || 0);
-      if (pct > 0) {
-        return Math.round(rate * (pct / 100));
-      }
-      return rate;
+      return pct > 0 ? Math.round(rate * (pct / 100)) : rate;
     }
 
     function startRealtimeTasks() {
@@ -748,22 +691,17 @@
         let totalEarnings = 0;
         let delCount = 0;
         let retCount = 0;
-
         const sessionLoginMs = Number(dboy.loginTime || 0);
 
         snapshot.forEach(docSnap => {
           const o = { docId: docSnap.id, ...docSnap.data() };
           if (o.status === 'CANCELLED_BY_CUSTOMER' || o.isCancelled) return;
 
-          // ಜಿಲ್ಲೆ ಮತ್ತು ತಾಲೂಕು ಹೊಂದುವಿಕೆ ಅಥವಾ ನೇರ ಅಸೈನ್‌ಮೆಂಟ್
           const regionAndAssignMatch = isSameDistrictAndTaluk(o, dboy);
           const isAssignedToMe = (o.assignedDboyId === dboy.id || o.deliveryBoyId === String(dboy.id));
           const isReturnAssignedToMe = (o.returnDboyId === dboy.id);
-
-          let isPackedReady = (o.status === 'STEP_3' || o.status === 'PACKING' || o.status === 'PACKED_READY');
-
-          // ರಿಟರ್ನ್ / ಎಕ್ಸ್ಚೇಂಜ್ ಆರ್ಡರ್
-          let isActiveReturn = (o.isReturned || o.isReturnRequested || o.isExchange || o.status === 'RETURN_REQUESTED' || o.status === 'RETURNED' || o.status === 'EXCHANGE_REQUESTED' || o.status === 'AWAITING_SHOP_RETURN_APPROVAL')
+          const isPackedReady = (o.status === 'STEP_3' || o.status === 'PACKING' || o.status === 'PACKED_READY');
+          const isActiveReturn = (o.isReturned || o.isReturnRequested || o.isExchange || o.status === 'RETURN_REQUESTED' || o.status === 'RETURNED' || o.status === 'EXCHANGE_REQUESTED' || o.status === 'AWAITING_SHOP_RETURN_APPROVAL')
             && o.status !== 'RETURN_COMPLETED';
 
           if (isActiveReturn) {
@@ -797,7 +735,7 @@
         history.sort((a, b) => getOrderTimeMs(b) - getOrderTimeMs(a));
 
         currentTotalEarnings = totalEarnings;
-        const pctNote = dboyCommissionPercent > 0 ? ` (${dboyCommissionPercent}% ಪರ್ಸಂಟೇಜ್ ಲೆಕ್ಕ)` : '';
+        const pctNote = dboyCommissionPercent > 0 ? ` (${dboyCommissionPercent}%)` : '';
         currentPaymentBreakdown = `ಡೆಲಿವರಿ (${delCount}) + ರಿಟರ್ನ್ (${retCount})${pctNote}`;
 
         document.getElementById('taskCount').innerText = tasks.length;
@@ -812,6 +750,7 @@
       });
     }
 
+    // --- ಚಿಕ್ಕದಾದ ಡೆಲಿವರಿ / ಎಕ್ಸ್ಚೇಂಜ್ ಟಾಸ್ಕ್ (ಮೊದಲು ಅಂಗಡಿ ಪಿಕ್ ಅಪ್ OTP -> ಆಮೇಲೆ ಗ್ರಾಹಕರ ಡೆಲಿವರಿ OTP) ---
     function renderTasks(tasks) {
       const listDiv = document.getElementById('dboyTasksList');
       if (tasks.length === 0) {
@@ -822,123 +761,67 @@
       listDiv.innerHTML = tasks.map(o => {
         const custName = o.customer?.name || 'ಗ್ರಾಹಕರು';
         const custPhone = o.customer?.phone || '';
-        const custVillage = o.customer?.village || o.customer?.address || '';
-        const custTaluk = o.customer?.taluk || o.taluk || dboy.taluk || '';
-        const custDistrict = o.customer?.district || o.district || dboy.district || '';
-        const custPincode = o.customer?.pincode || '';
-        const custLandmark = o.customer?.landmark ? ` (${o.customer.landmark})` : '';
+        const custAddr = `${o.customer?.village || ''} ${o.customer?.taluk || ''} ${o.customer?.district || ''} ${o.customer?.pincode || ''}`.trim();
         const totalAmt = Number(o.totalPrice || o.basePrice || o.itemPrice || 0);
 
         const shopName = o.shopName || 'Store';
-        const shopDistrict = o.shopDistrict || o.district || dboy.district || '';
-        const shopTaluk = o.shopTaluk || o.taluk || dboy.taluk || '';
-        const shopLocation = o.shopLocation || o.shopVillage || `${shopTaluk}, ${shopDistrict}`;
+        const shopAddr = `${o.shopLocation || o.shopVillage || ''} ${o.shopTaluk || ''} ${o.shopDistrict || ''}`.trim();
         const shopPhone = o.shopPhone || '8105010768';
-
-        const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${custVillage} ${custTaluk} ${custDistrict} ${custPincode}`)}`;
-        const shopMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${shopName} ${shopLocation} ${shopTaluk} ${shopDistrict}`)}`;
 
         const exchangeItem = isExchangeOrder(o);
         const isOnlinePaid = o.paymentMode && o.paymentMode !== 'COD' && o.paymentMode !== 'CASH_ON_DELIVERY';
 
-        const payBadge = exchangeItem
-          ? `<span class="pay-badge pay-no-money">🚫 ಎಕ್ಸ್ಚೇಂಜ್ — ಗ್ರಾಹಕರ ಬಳಿ ಹಣ ತಗೋಬೇಡಿ (₹0)</span>`
-          : (!isOnlinePaid
-              ? `<span class="pay-badge pay-cod">💵 Cash on Delivery (ಕ್ಯಾಶ್ ಆನ್ ಡೆಲಿವರಿ - ₹${totalAmt} ಪಡೆಯಿರಿ)</span>`
-              : `<span class="pay-badge pay-upi">✔ UPI / ಆನ್ಲೈನ್ ಪಾವತಿಯಾಗಿದೆ (ದುಡ್ಡು ಪಡೆಯಬೇಡಿ)</span>`);
+        const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(custAddr)}`;
+        const shopMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${shopName} ${shopAddr}`)}`;
 
-        const exchangeBanner = exchangeItem
-          ? `
-            <div class="exchange-alert-box">
-              <b>🔁 ಇದು ಎಕ್ಸ್ಚೇಂಜ್ ಇದೆ!</b><br>
-              ಈ ವಸ್ತುವನ್ನು ಎಕ್ಸ್ಚೇಂಜ್ ಇದೆ — ಅಂಗಡಿಯಲ್ಲಿರುವ ವಸ್ತುವನ್ನು ತಗೊಂಡು ಹೋಗಿ, ಆ ವಸ್ತುವನ್ನು ಕೊಟ್ಟು ಈ ವಸ್ತುವನ್ನು ರಿಟರ್ನ್ ಪಡೆಯಿರಿ.<br>
-              <b>💰 ಹಣದ ಸೂಚನೆ:</b> ಗ್ರಾಹಕರ ಬಳಿ ಯಾವುದೇ ಹಣ ತಗೋಬೇಕಿಲ್ಲ (₹0).
-            </div>
-          `
+        const moneyTag = exchangeItem
+          ? `<span class="tag-nomoney">🚫 ಎಕ್ಸ್ಚೇಂಜ್: ಹಣ ತಗೋಬೇಡಿ (₹0)</span>`
+          : (!isOnlinePaid
+              ? `<span class="tag-money">💵 COD: ₹${totalAmt} ಪಡೆಯಿರಿ</span>`
+              : `<span class="tag-nomoney">✔ ಪಾವತಿಯಾಗಿದೆ (ಹಣ ತಗೋಬೇಡಿ)</span>`);
+
+        const exchangeNote = exchangeItem
+          ? `<div class="tag-exchange">🔁 ಎಕ್ಸ್ಚೇಂಜ್: ಮೊದಲು ಅಂಗಡಿಯಿಂದ ವಸ್ತು ಪಡೆದು, ಆ ವಸ್ತು ಕೊಟ್ಟು ರಿಟರ್ನ್ ಪಡೆಯಿರಿ.</div>`
           : '';
 
-        const shopAddressSection = !o.isPickedUp
-          ? `
-            <div class="shop-full-box">
-              <p style="font-weight:bold; color:#e65100; margin-bottom:3px;">🏪 ಪಿಕ್ ಅಪ್ ಅಂಗಡಿ ವಿವರಗಳು:</p>
-              <p><b>ಅಂಗಡಿ:</b> ${shopName}</p>
-              <p><b>ಜಿಲ್ಲೆ:</b> ${shopDistrict} | <b>ತಾಲೂಕು:</b> ${shopTaluk}</p>
-              <p><b>ಸ್ಥಳ:</b> ${shopLocation}</p>
-              <p style="font-size:0.78rem; color:#555; margin-top:2px;">📱 ಮೊಬೈಲ್: ${shopPhone}</p>
-              <div style="display:flex; gap:6px; margin-top:6px;">
-                <a href="tel:${shopPhone}" class="btn-shop-call">📞 ಅಂಗಡಿಗೆ ಕಾಲ್</a>
-                <a href="${shopMapsUrl}" target="_blank" style="flex:1; background:#e65100; color:#fff; text-align:center; padding:7px; border-radius:6px; text-decoration:none; font-size:0.78rem; font-weight:bold;">📍 ಜಿಪಿಎಸ್ ಲೊಕೇಶನ್</a>
-              </div>
-            </div>
-          `
-          : `
-            <div class="shop-compact-bar">
-              <span>🏪 <b>${shopName}</b> (${shopTaluk}, ${shopDistrict}) • 📱 ${shopPhone}</span>
-              <a href="tel:${shopPhone}" style="background:#e65100; color:#fff; padding:4px 8px; border-radius:5px; text-decoration:none; font-size:0.72rem; font-weight:bold;">📞</a>
-            </div>
-          `;
-
-        const customerFullBox = `
-          <div class="cust-full-box">
-            <p style="font-weight:bold; color:#1b5e20; font-size:0.88rem; margin-bottom:4px;">📍 ಗ್ರಾಹಕರ ಸಂಪೂರ್ಣ ವಿಳಾಸ & ವಿವರಗಳು:</p>
-            <p><b>ಗ್ರಾಹಕರ ಹೆಸರು:</b> ${custName}</p>
-            <p><b>ಮೊಬೈಲ್ ನಂಬರ್:</b> ${custPhone}</p>
-            <p><b>ಜಿಲ್ಲೆಯ ಹೆಸರು:</b> ${custDistrict}</p>
-            <p><b>ತಾಲೂಕು ಹೆಸರು:</b> ${custTaluk}</p>
-            <p><b>ಊರ ಹೆಸರು:</b> ${custVillage}${custLandmark}</p>
-            <p><b>ಪಿನ್ ಕೋಡ್ ನಂಬರ್:</b> ${custPincode}</p>
-            <p style="margin-top:4px; font-size:0.92rem; color:#0d47a1; font-weight:800;">💰 ಟೋಟಲ್ ಅಮೌಂಟ್: ${exchangeItem ? '₹0 (ಎಕ್ಸ್ಚೇಂಜ್ — ಹಣ ತಗೋಬೇಡಿ)' : `₹${totalAmt}`}</p>
-            <div>${payBadge}</div>
-            <div style="display:flex; gap:6px; margin-top:8px;">
-              <a href="tel:${custPhone}" class="btn-call">📞 ಗ್ರಾಹಕರಿಗೆ ಕಾಲ್ ಮಾಡಿ</a>
-              <a href="${mapsUrl}" target="_blank" style="flex:1; background:#1976d2; color:#fff; text-align:center; padding:7px; border-radius:6px; text-decoration:none; font-size:0.78rem; font-weight:bold;">🗺️ ಜಿಪಿಎಸ್ ಮ್ಯಾಪ್</a>
-            </div>
-          </div>
-        `;
-
-        let stepBoxHTML = '';
+        let stepHtml = '';
         if (!o.isPickedUp) {
-          stepBoxHTML = `
-            ${exchangeBanner}
-            <div style="background:#fff3e0; border:1px solid #ffe0b2; border-radius:6px; padding:6px; margin-bottom:8px; text-align:center;">
-              <span style="font-size:0.7rem; color:#e65100; font-weight:bold;">🧾 ಆರ್ಡರ್ ಐಡಿ (Order ID):</span>
-              <div style="font-size:0.95rem; font-weight:bold; color:#bf360c; letter-spacing:1px;">${o.orderId || 'OD000000'}</div>
-            </div>
-            ${shopAddressSection}
-            <div style="margin-top:10px; background:#fff3e0; padding:10px; border-radius:8px; border:1px solid #ffe0b2;">
-              <label style="font-size:0.8rem; font-weight:bold; color:#e65100; margin-bottom:4px;">ಅಂಗಡಿಯವರ ಬಳಿ ಪಡೆದ 4-ಡಿಜಿಟ್ ಪಿಕ್ ಅಪ್ ಒಟಿಪಿ ಹಾಕಿ:</label>
-              <div style="display:flex; gap:8px; align-items:center;">
-                <input type="tel" inputmode="numeric" maxlength="4" id="pickupOtp_${o.docId}" placeholder="OTP ಹಾಕಿ" style="flex:1; width:100%; min-width:110px; padding:10px; font-size:1.1rem; border:1px solid #ccc; border-radius:6px; text-align:center; font-weight:bold; letter-spacing:2px; background:#fff;">
-                <button onclick="verifyPickupOtp('${o.docId}', '${o.pickupOtp || ''}')" class="btn-pickup" style="padding:10px 14px; white-space:nowrap;">ಪಿಕ್ ಅಪ್ (OK)</button>
+          // ಹಂತ 1: ಮೊದಲು ಅಂಗಡಿ ಮಾಲೀಕರ ಹತ್ತಿರ ಪಿಕ್ ಅಪ್ OTP
+          stepHtml = `
+            <div class="compact-box shop-box">
+              <b>1️⃣ ಅಂಗಡಿ ಪಿಕ್ ಅಪ್:</b> ${shopName} (${shopAddr || 'ತಾಲೂಕು/ಜಿಲ್ಲೆ'}) • 📱 ${shopPhone}
+              <div style="display:flex; gap:6px; margin-top:5px;">
+                <a href="tel:${shopPhone}" class="btn-shop-call">📞 ಕಾಲ್</a>
+                <a href="${shopMapsUrl}" target="_blank" style="flex:1; background:#e65100; color:#fff; text-align:center; padding:6px; border-radius:6px; text-decoration:none; font-size:0.75rem; font-weight:bold;">📍 ಮ್ಯಾಪ್</a>
+              </div>
+              <div class="otp-row">
+                <input type="tel" inputmode="numeric" maxlength="4" id="pickupOtp_${o.docId}" placeholder="ಅಂಗಡಿ OTP" class="otp-input">
+                <button onclick="verifyPickupOtp('${o.docId}', '${o.pickupOtp || ''}')" class="btn-pickup">ಪಿಕ್ ಅಪ್ OTP</button>
               </div>
             </div>
-            ${customerFullBox}
           `;
         } else {
-          stepBoxHTML = `
-            ${exchangeBanner}
-            <div style="background:#e8f5e9; border:1px solid #a5d6a7; border-radius:6px; padding:6px; margin-bottom:8px; text-align:center;">
-              <span style="font-size:0.7rem; color:#1b5e20; font-weight:bold;">🧾 ಆರ್ಡರ್ ಐಡಿ: ${o.orderId || 'OD000000'}</span>
-              <div style="font-size:0.76rem; color:var(--success); font-weight:bold; margin-top:2px;">✔ ಪಿಕ್ ಅಪ್ ಆಗಿದೆ — ಈಗ ಡೆಲಿವರಿಗೆ ಹೊರಡಿ</div>
-            </div>
-
-            ${customerFullBox}
-            ${shopAddressSection}
-
-            <div style="margin-top:10px; background:#e8f5e9; padding:10px; border-radius:8px; border:1px solid #c8e6c9;">
-              <label style="font-size:0.8rem; font-weight:bold; color:#2e7d32; margin-bottom:4px;">ಗ್ರಾಹಕರ ಬಳಿ ಪಡೆದ 4-ಡಿಜಿಟ್ ಡೆಲಿವರಿ ಒಟಿಪಿ ಹಾಕಿ:</label>
-              <div style="display:flex; gap:8px; align-items:center;">
-                <input type="tel" inputmode="numeric" maxlength="4" id="deliveryOtp_${o.docId}" placeholder="OTP ಹಾಕಿ" style="flex:1; width:100%; min-width:110px; padding:10px; font-size:1.1rem; border:1px solid #ccc; border-radius:6px; text-align:center; font-weight:bold; letter-spacing:2px; background:#fff;">
-                <button onclick="verifyDeliveryOtp('${o.docId}', '${o.deliveryOtp || ''}')" class="btn-deliver" style="padding:10px 14px; white-space:nowrap;">ಡೆಲಿವರಿ (OK)</button>
+          // ಹಂತ 2: ಪಿಕ್ ಅಪ್ ಆದ ಮೇಲೆ ಗ್ರಾಹಕರ ವಿಳಾಸ & ಡೆಲಿವರಿ OTP
+          stepHtml = `
+            <div class="compact-box cust-box">
+              <b>2️⃣ ಗ್ರಾಹಕರ ಡೆಲಿವರಿ:</b> ${custName} (${custPhone})<br>
+              <span>📍 ${custAddr}</span><br>
+              ${moneyTag}
+              <div style="display:flex; gap:6px; margin-top:6px;">
+                <a href="tel:${custPhone}" class="btn-call">📞 ಕಾಲ್</a>
+                <a href="${mapsUrl}" target="_blank" style="flex:1; background:#1976d2; color:#fff; text-align:center; padding:6px; border-radius:6px; text-decoration:none; font-size:0.75rem; font-weight:bold;">🗺️ ಮ್ಯಾಪ್</a>
+              </div>
+              <div class="otp-row">
+                <input type="tel" inputmode="numeric" maxlength="4" id="deliveryOtp_${o.docId}" placeholder="ಡೆಲಿವರಿ OTP" class="otp-input">
+                <button onclick="verifyDeliveryOtp('${o.docId}', '${o.deliveryOtp || ''}')" class="btn-deliver">ಡೆಲಿವರಿ OTP</button>
               </div>
 
-              <div style="margin-top:10px; padding-top:8px; border-top:1px dashed #ef9a9a;">
-                <label style="font-size:0.78rem; font-weight:bold; color:#c62828; margin-bottom:4px;">ಗ್ರಾಹಕರಿಗೆ ವಸ್ತು ಬೇಡವೆಂದರೆ — ಕ್ಯಾನ್ಸಲ್ OTP ಹಾಕಿ:</label>
-                <div style="display:flex; gap:8px; align-items:center;">
-                  <input type="tel" inputmode="numeric" maxlength="4" id="cancelOtpInput_${o.docId}" placeholder="Cancel OTP" style="flex:1; padding:8px; font-size:1rem; border:1.5px solid #ef9a9a; border-radius:6px; text-align:center; font-weight:bold; background:#fff;">
-                  <button type="button" onclick="confirmCancelOrderWithOtp('${o.docId}', '${o.orderId || ''}')" style="background:#c62828; color:#fff; border:none; padding:9px 12px; border-radius:6px; font-size:0.78rem; font-weight:bold; cursor:pointer; white-space:nowrap;">ಕ್ಯಾನ್ಸಲ್ ಕನ್ಫರ್ಮ್</button>
+              <div style="margin-top:8px; padding-top:6px; border-top:1px dashed #ef9a9a;">
+                <div class="otp-row">
+                  <input type="tel" inputmode="numeric" maxlength="4" id="cancelOtpInput_${o.docId}" placeholder="ಕ್ಯಾನ್ಸಲ್ OTP" class="otp-input">
+                  <button type="button" onclick="confirmCancelOrderWithOtp('${o.docId}', '${o.orderId || ''}')" style="background:#c62828; color:#fff; border:none; padding:8px 10px; border-radius:6px; font-size:0.75rem; font-weight:bold; cursor:pointer; white-space:nowrap;">ಕ್ಯಾನ್ಸಲ್ OK</button>
                 </div>
-                <button type="button" onclick="sendCancelOtpToCustomer('${o.docId}', '${custPhone}')" class="btn-cancel-order">🚫 ಆರ್ಡರ್ ಕ್ಯಾನ್ಸಲ್ ಮಾಡಿ (ಗ್ರಾಹಕರಿಗೆ ಕ್ಯಾನ್ಸಲ್ OTP ಕಳಿಸಿ)</button>
+                <button type="button" onclick="sendCancelOtpToCustomer('${o.docId}', '${custPhone}')" class="btn-cancel-order">🚫 ಕ್ಯಾನ್ಸಲ್ OTP ಕಳಿಸಿ</button>
               </div>
             </div>
           `;
@@ -946,19 +829,21 @@
 
         return `
           <div class="order-item">
-            <div style="display:flex; gap:10px; align-items:center; margin-bottom:8px;">
-              <img src="${o.productPhoto}" style="width:60px; height:60px; object-fit:cover; border-radius:6px;">
+            <div style="display:flex; gap:8px; align-items:center;">
+              <img src="${o.productPhoto}" style="width:52px; height:52px; object-fit:cover; border-radius:6px;">
               <div>
-                <h4 style="font-size:0.9rem;">${o.productName}</h4>
-                <p style="font-size:0.8rem; color:#2e7d32; font-weight:bold;">${exchangeItem ? '🔁 ಎಕ್ಸ್ಚೇಂಜ್ ವಸ್ತು (ಹಣ ತಗೋಬೇಡಿ)' : `₹${totalAmt} (ಡೆಲಿವರಿ ಚಾರ್ಜ್: ₹${deliveryChargeRate})`}</p>
+                <b style="font-size:0.86rem;">${o.productName}</b> <span style="font-size:0.72rem; color:#666;">(${o.orderId || ''})</span><br>
+                <span style="color:#2e7d32; font-weight:bold;">${exchangeItem ? '🔁 ಎಕ್ಸ್ಚೇಂಜ್' : `₹${totalAmt}`}</span>
               </div>
             </div>
-            ${stepBoxHTML}
+            ${exchangeNote}
+            ${stepHtml}
           </div>
         `;
       }).join('');
     }
 
+    // --- ಚಿಕ್ಕದಾದ ರಿಟರ್ನ್ / ಎಕ್ಸ್ಚೇಂಜ್ ಟಾಸ್ಕ್ ---
     function renderReturnTasks(returnTasks) {
       const listDiv = document.getElementById('dboyReturnTasksList');
       if (returnTasks.length === 0) {
@@ -969,122 +854,117 @@
       listDiv.innerHTML = returnTasks.map(o => {
         const custName = o.customer?.name || 'ಗ್ರಾಹಕರು';
         const custPhone = o.customer?.phone || '';
-        const custVillage = o.customer?.village || o.customer?.address || '';
-        const custTaluk = o.customer?.taluk || o.taluk || dboy.taluk || '';
-        const custDistrict = o.customer?.district || o.district || dboy.district || '';
-        const custPincode = o.customer?.pincode || '';
+        const custAddr = `${o.customer?.village || ''} ${o.customer?.taluk || ''} ${o.customer?.district || ''} ${o.customer?.pincode || ''}`.trim();
 
         const shopName = o.shopName || 'Store';
-        const shopDistrict = o.shopDistrict || o.district || dboy.district || '';
-        const shopTaluk = o.shopTaluk || o.taluk || dboy.taluk || '';
-        const shopLocation = o.shopLocation || o.shopVillage || `${shopTaluk}, ${shopDistrict}`;
+        const shopAddr = `${o.shopLocation || o.shopVillage || ''} ${o.shopTaluk || ''} ${o.shopDistrict || ''}`.trim();
         const shopPhone = o.shopPhone || '8105010768';
 
-        const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${custVillage} ${custTaluk} ${custDistrict} ${custPincode}`)}`;
-        const shopMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${shopName} ${shopLocation} ${shopTaluk} ${shopDistrict}`)}`;
-
         const exchangeItem = isExchangeOrder(o);
-        const isOnlinePaid = o.paymentMode && o.paymentMode !== 'COD' && o.paymentMode !== 'CASH_ON_DELIVERY';
-
-        const payBadge = exchangeItem
-          ? `<span class="pay-badge pay-no-money">🚫 ಎಕ್ಸ್ಚೇಂಜ್ — ಗ್ರಾಹಕರ ಬಳಿ ಹಣ ತಗೋಬೇಡಿ (₹0)</span>`
-          : (!isOnlinePaid
-              ? `<span class="pay-badge pay-cod">💵 COD Order Return</span>`
-              : `<span class="pay-badge pay-upi">✔ UPI Online Return</span>`);
-
-        const typeAlertHtml = exchangeItem
-          ? `
-            <div class="exchange-alert-box">
-              <b>🔁 ಇದು ಎಕ್ಸ್ಚೇಂಜ್ ಇದೆ!</b><br>
-              ಈ ವಸ್ತುವನ್ನು ಎಕ್ಸ್ಚೇಂಜ್ ಇದೆ — ಅಂಗಡಿಯಲ್ಲಿರುವ ವಸ್ತುವನ್ನು ತಗೊಂಡು ಹೋಗಿ, ಆ ವಸ್ತುವನ್ನು ಕೊಟ್ಟು ಈ ವಸ್ತುವನ್ನು ರಿಟರ್ನ್ ಪಡೆಯಿರಿ.<br>
-              <b>💰 ಗ್ರಾಹಕರ ಬಳಿ ಹಣ ತಗೋಬೇಕಾ?</b> <span style="color:#b71c1c; font-weight:900;">ಏನು ಇಲ್ಲ (₹0 — ಹಣ ಪಡೆಯಬೇಡಿ).</span><br>
-              <b>🏪 ಅಂಗಡಿ ಮಾಲೀಕರಿಗೆ ಸೂಚನೆ:</b> ಇದು ಎಕ್ಸ್ಚೇಂಜ್ ಆಗಿದೆ — ವಸ್ತುವನ್ನು <b>ಹಾರ್ಟ್ ಪ್ಯಾಕಿಂಗ್</b> ಮಾಡಿ ಡೆಲಿವರಿ ಬಾಯ್‌ಗೆ ಕಳಿಸಿ; ರಿಟರ್ನ್ ತಲುಪಿದಾಗ <b>ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್</b> ಬಟನ್ ಒತ್ತಿ.
-            </div>
-          `
-          : `
-            <div class="return-alert-box">
-              ↩️ ಇದು ರಿಟರ್ನ್ ಆಗಿದೆ — ಪಿಕಪ್ ಮಾಡಿ
-            </div>
-          `;
+        const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(custAddr)}`;
+        const shopMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${shopName} ${shopAddr}`)}`;
 
         let returnStepHtml = '';
-        // ರಿಟರ್ನ್ ಬಂದಾಗ 'ರಿಟರ್ನ್ ಬಟನ್' ಮಾತ್ರ ಕಾಣಬೇಕು; ಡೆಲಿವರಿ ಬಾಯ್ ರಿಟರ್ನ್ ಪಿಕ್ ಅಪ್ ಮಾಡಿದ ಮೇಲೆಯೇ ಕನ್ಫರ್ಮ್ ಬಟನ್ ಕಾಣಬೇಕು
-        if (!o.isReturnPickedUp) {
-          returnStepHtml = `
-            ${typeAlertHtml}
-            <div style="background:#ffebee; border:1px solid #ffcdd2; border-radius:6px; padding:8px; margin-bottom:8px; text-align:center;">
-              <span style="font-size:0.75rem; color:#c62828; font-weight:bold;">🔄 ರಿಟರ್ನ್ ಆರ್ಡರ್ ಐಡಿ: ${o.orderId || 'OD0000'}</span>
-            </div>
 
-            <div class="cust-full-box" style="background:#fff; border-color:#ef9a9a; margin-bottom:10px;">
-              <h4 style="font-size:0.86rem; color:var(--danger); margin-bottom:4px;">1. ಗ್ರಾಹಕರ ಸಂಪೂರ್ಣ ವಿಳಾಸ (Pickup from Customer):</h4>
-              <p><b>ಹೆಸರು:</b> ${custName}</p>
-              <p><b>ಮೊಬೈಲ್:</b> ${custPhone}</p>
-              <p><b>ಜಿಲ್ಲೆ:</b> ${custDistrict} | <b>ತಾಲೂಕು:</b> ${custTaluk}</p>
-              <p><b>ಊರು & ವಿಳಾಸ:</b> ${custVillage} - ${custPincode}</p>
-              <p style="margin-top:4px; font-weight:800; color:#01579b;">${exchangeItem ? '💵 ಗ್ರಾಹಕರ ಬಳಿ ಹಣ: ತಗೋಬೇಡಿ (₹0)' : ''}</p>
-              <div style="display:flex; gap:6px; margin-top:6px;">
-                <a href="tel:${custPhone}" class="btn-call">📞 ಗ್ರಾಹಕರಿಗೆ ಕಾಲ್</a>
-                <a href="${mapsUrl}" target="_blank" style="flex:1; background:#1976d2; color:#fff; text-align:center; padding:7px; border-radius:6px; text-decoration:none; font-size:0.78rem; font-weight:bold;">🗺️ ಜಿಪಿಎಸ್ ಮ್ಯಾಪ್</a>
+        if (exchangeItem) {
+          // ಎಕ್ಸ್ಚೇಂಜ್ ಆದಾಗ: ಮೊದಲು ಅಂಗಡಿ ವಿಳಾಸ & ಪಿಕ್ ಅಪ್ -> ಆಮೇಲೆ ಗ್ರಾಹಕರ ವಿಳಾಸ & ರಿಟರ್ನ್ OTP -> ಆಮೇಲೆ ಕನ್ಫರ್ಮ್
+          if (!o.isExchangeShopPickedUp) {
+            returnStepHtml = `
+              <div class="tag-exchange">🔁 ಎಕ್ಸ್ಚೇಂಜ್: ಮೊದಲು ಅಂಗಡಿಗೆ ಹೋಗಿ ವಸ್ತು ತೆಗೆದುಕೊಳ್ಳಿ. ಹಣ ತಗೋಬೇಡಿ (₹0).</div>
+              <div class="compact-box shop-box">
+                <b>1️⃣ ಅಂಗಡಿ ವಿಳಾಸ (ಹಾರ್ಟ್ ಪ್ಯಾಕಿಂಗ್ ಪಡೆಯಿರಿ):</b> ${shopName} (${shopAddr}) • 📱 ${shopPhone}
+                <div style="display:flex; gap:6px; margin-top:5px;">
+                  <a href="tel:${shopPhone}" class="btn-shop-call">📞 ಕಾಲ್</a>
+                  <a href="${shopMapsUrl}" target="_blank" style="flex:1; background:#e65100; color:#fff; text-align:center; padding:6px; border-radius:6px; text-decoration:none; font-size:0.75rem; font-weight:bold;">📍 ಮ್ಯಾಪ್</a>
+                </div>
+                <div class="otp-row">
+                  <input type="tel" inputmode="numeric" maxlength="4" id="exShopOtp_${o.docId}" placeholder="ಅಂಗಡಿ OTP" class="otp-input">
+                  <button onclick="verifyExchangeShopPickup('${o.docId}', '${o.pickupOtp || ''}')" class="btn-pickup">ಅಂಗಡಿ ಪಿಕ್ ಅಪ್</button>
+                </div>
               </div>
-            </div>
-
-            <div style="background:#ffebee; padding:10px; border-radius:8px; border:1px solid #ffcdd2;">
-              <label style="font-size:0.8rem; font-weight:bold; color:#c62828; margin-bottom:4px;">ಗ್ರಾಹಕರ ಬಳಿ ಪಡೆದ 4-ಡಿಜಿಟ್ ರಿಟರ್ನ್ ಒಟಿಪಿ ಹಾಕಿ ಪಿಕ್ ಅಪ್ ಮಾಡಿ:</label>
-              <div style="display:flex; gap:8px; align-items:center;">
-                <input type="tel" inputmode="numeric" maxlength="4" id="retPickupOtp_${o.docId}" placeholder="OTP ಹಾಕಿ" style="flex:1; width:100%; min-width:110px; padding:10px; font-size:1.1rem; border:1px solid #ccc; border-radius:6px; text-align:center; font-weight:bold; letter-spacing:2px; background:#fff;">
-                <button onclick="verifyReturnCustomerPickup('${o.docId}', '${o.returnPickupOtp || o.returnOtp || o.deliveryOtp || ''}')" class="btn-pickup" style="padding:10px 14px; white-space:nowrap;">🔄 ರಿಟರ್ನ್ ಬಟನ್ (ಪಿಕ್ ಅಪ್)</button>
+            `;
+          } else if (!o.isReturnPickedUp) {
+            returnStepHtml = `
+              <div class="tag-exchange">🔁 ಎಕ್ಸ್ಚೇಂಜ್: ಅಂಗಡಿ ವಸ್ತು ಕೊಟ್ಟು, ಈ ವಸ್ತು ರಿಟರ್ನ್ ಪಡೆಯಿರಿ. ಹಣ ತಗೋಬೇಡಿ (₹0).</div>
+              <div class="compact-box cust-box">
+                <b>2️⃣ ಗ್ರಾಹಕರ ವಿಳಾಸ:</b> ${custName} (${custPhone})<br>
+                <span>📍 ${custAddr}</span><br>
+                <span class="tag-nomoney">🚫 ಹಣ ತಗೋಬೇಡಿ (₹0)</span>
+                <div style="display:flex; gap:6px; margin-top:5px;">
+                  <a href="tel:${custPhone}" class="btn-call">📞 ಕಾಲ್</a>
+                  <a href="${mapsUrl}" target="_blank" style="flex:1; background:#1976d2; color:#fff; text-align:center; padding:6px; border-radius:6px; text-decoration:none; font-size:0.75rem; font-weight:bold;">🗺️ ಮ್ಯಾಪ್</a>
+                </div>
+                <div class="otp-row">
+                  <input type="tel" inputmode="numeric" maxlength="4" id="retPickupOtp_${o.docId}" placeholder="ರಿಟರ್ನ್ OTP" class="otp-input">
+                  <button onclick="verifyReturnCustomerPickup('${o.docId}', '${o.returnPickupOtp || o.returnOtp || o.deliveryOtp || ''}')" class="btn-pickup">ರಿಟರ್ನ್ ಪಡೆಯಿರಿ</button>
+                </div>
               </div>
-            </div>
-          `;
-        } else if (o.status === 'AWAITING_SHOP_RETURN_APPROVAL') {
-          returnStepHtml = `
-            ${typeAlertHtml}
-            <div style="background:#fff3e0; border:1.5px solid #fb8c00; border-radius:8px; padding:10px; text-align:center;">
-              <p style="font-weight:bold; color:#e65100; font-size:0.88rem;">✔ ಡೆಲಿವರಿ ಬಾಯ್ ರಿಟರ್ನ್ ಪಿಕ್ ಅಪ್ ಆಗಿದೆ — ಈಗ ಅಂಗಡಿಗೆ ತಲುಪಿಸಿ ಕನ್ಫರ್ಮ್ ಮಾಡಿ</p>
-              <p style="font-size:0.78rem; color:#555; margin-top:4px;">ಅಂಗಡಿ ಮಾಲೀಕರಲ್ಲಿ: <b>"ಇದು ಎಕ್ಸ್ಚೇಂಜ್ ಆಗಿದೆ — ಹಾರ್ಟ್ ಪ್ಯಾಕಿಂಗ್ ಮಾಡಿ ಕಳಿಸಿ; ರಿಟರ್ನ್ ತಲುಪಿದಾಗ ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್ ಬಟನ್ ಒತ್ತಿ"</b> ಎಂದು ಕಳುಹಿಸಲಾಗಿದೆ.</p>
-              <button type="button" onclick="confirmShopReturnReceived('${o.docId}')" class="btn btn-success" style="margin-top:8px; padding:9px; font-size:0.82rem;">✔ ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್ / ರಿಟರ್ನ್ ಕನ್ಫರ್ಮ್ (OK)</button>
-            </div>
-          `;
+            `;
+          } else if (o.status === 'AWAITING_SHOP_RETURN_APPROVAL') {
+            returnStepHtml = `
+              <div class="compact-box shop-box" style="text-align:center;">
+                <b>✔ ರಿಟರ್ನ್ ಪಿಕ್ ಅಪ್ ಆಗಿದೆ!</b><br>
+                <span>ಅಂಗಡಿಗೆ ರಿಟರ್ನ್ ತಲುಪಿದಾಗ <b>ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್</b> ಒತ್ತಿ.</span>
+                <button type="button" onclick="confirmShopReturnReceived('${o.docId}')" class="btn btn-success" style="margin-top:6px; padding:8px; font-size:0.78rem;">✔ ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್</button>
+              </div>
+            `;
+          } else {
+            // ರಿಟರ್ನ್ ಪಿಕ್ ಅಪ್ ಆದ ನಂತರವೇ ಕನ್ಫರ್ಮ್ ಬಟನ್ ಕಾಣುತ್ತದೆ
+            returnStepHtml = `
+              <div class="compact-box shop-box">
+                <b>3️⃣ ಅಂಗಡಿಗೆ ರಿಟರ್ನ್ ನೀಡಿ ಕನ್ಫರ್ಮ್ ಮಾಡಿ:</b> ${shopName} (${shopAddr}) • 📱 ${shopPhone}
+                <div class="otp-row">
+                  <input type="tel" inputmode="numeric" maxlength="4" id="retDeliverOtp_${o.docId}" placeholder="ಅಂಗಡಿ OTP" class="otp-input">
+                  <button onclick="verifyReturnShopDelivery('${o.docId}', '${o.returnDeliveryOtp || o.returnOtp || ''}')" class="btn-deliver">✔ ರಿಟರ್ನ್ ಕನ್ಫರ್ಮ್</button>
+                </div>
+              </div>
+            `;
+          }
         } else {
-          // ಡೆಲಿವರಿ ಬಾಯ್ ರಿಟರ್ನ್ ಪಿಕ್ ಅಪ್ ಮಾಡಿದ ನಂತರವೇ ಕನ್ಫರ್ಮ್ ಬಟನ್ ಕಾಣುತ್ತದೆ
-          returnStepHtml = `
-            ${typeAlertHtml}
-            <div style="background:#e8f5e9; border:1px solid #c8e6c9; border-radius:6px; padding:8px; margin-bottom:8px; text-align:center;">
-              <span style="font-size:0.75rem; color:#2e7d32; font-weight:bold;">✔ ಗ್ರಾಹಕರಿಂದ ರಿಟರ್ನ್ ಪಿಕ್ ಅಪ್ ಆಗಿದೆ — ಈಗ ಅಂಗಡಿಗೆ ಕೊಡಿ ಮತ್ತು ಕನ್ಫರ್ಮ್ ಮಾಡಿ</span>
-            </div>
-
-            <div class="shop-full-box" style="margin-bottom:10px;">
-              <h4 style="font-size:0.86rem; color:#bf360c; margin-bottom:4px;">2. ಅಂಗಡಿ ಮಾಲೀಕರ ವಿಳಾಸ (Deliver Return to Shop):</h4>
-              <p><b>ಅಂಗಡಿ ಹೆಸರು:</b> ${shopName}</p>
-              <p><b>ಜಿಲ್ಲೆ:</b> ${shopDistrict} | <b>ತಾಲೂಕು:</b> ${shopTaluk}</p>
-              <p><b>ಸ್ಥಳ / ವಿಳಾಸ:</b> ${shopLocation}</p>
-              <p style="font-size:0.78rem; color:#555; margin-top:2px;">📱 ಮೊಬೈಲ್: ${shopPhone}</p>
-              
-              <div style="display:flex; gap:6px; margin-top:6px;">
-                <a href="tel:${shopPhone}" class="btn-shop-call">📞 ಅಂಗಡಿಗೆ ಕಾಲ್</a>
-                <a href="${shopMapsUrl}" target="_blank" style="flex:1; background:#e65100; color:#fff; text-align:center; padding:7px; border-radius:6px; text-decoration:none; font-size:0.78rem; font-weight:bold;">📍 ಅಂಗಡಿ ಜಿಪಿಎಸ್</a>
+          // ಸಾಮಾನ್ಯ ರಿಟರ್ನ್: ಮೊದಲು ರಿಟರ್ನ್ ಪಡೆಯಲು OTP -> ಪಿಕ್ ಅಪ್ ಆದ ಮೇಲೆ ರಿಟರ್ನ್ ಕನ್ಫರ್ಮ್
+          if (!o.isReturnPickedUp) {
+            returnStepHtml = `
+              <div class="tag-return">↩️ ಇದು ರಿಟರ್ನ್ ಆಗಿದೆ — ಪಿಕಪ್ ಮಾಡಿ</div>
+              <div class="compact-box cust-box">
+                <b>ಗ್ರಾಹಕರು:</b> ${custName} (${custPhone})<br>
+                <span>📍 ${custAddr}</span>
+                <div style="display:flex; gap:6px; margin-top:5px;">
+                  <a href="tel:${custPhone}" class="btn-call">📞 ಕಾಲ್</a>
+                  <a href="${mapsUrl}" target="_blank" style="flex:1; background:#1976d2; color:#fff; text-align:center; padding:6px; border-radius:6px; text-decoration:none; font-size:0.75rem; font-weight:bold;">🗺️ ಮ್ಯಾಪ್</a>
+                </div>
+                <div class="otp-row">
+                  <input type="tel" inputmode="numeric" maxlength="4" id="retPickupOtp_${o.docId}" placeholder="ರಿಟರ್ನ್ OTP" class="otp-input">
+                  <button onclick="verifyReturnCustomerPickup('${o.docId}', '${o.returnPickupOtp || o.returnOtp || o.deliveryOtp || ''}')" class="btn-pickup">ರಿಟರ್ನ್ ಪಡೆಯಿರಿ</button>
+                </div>
               </div>
-            </div>
-
-            <div style="background:#e8f5e9; padding:10px; border-radius:8px; border:1px solid #c8e6c9;">
-              <label style="font-size:0.8rem; font-weight:bold; color:#2e7d32; margin-bottom:4px;">ಅಂಗಡಿ ಮಾಲೀಕರ 4-ಡಿಜಿಟ್ ರಿಟರ್ನ್ ಒಟಿಪಿ ಹಾಕಿ ಕನ್ಫರ್ಮ್ ಮಾಡಿ:</label>
-              <div style="display:flex; gap:8px; align-items:center;">
-                <input type="tel" inputmode="numeric" maxlength="4" id="retDeliverOtp_${o.docId}" placeholder="OTP ಹಾಕಿ" style="flex:1; width:100%; min-width:110px; padding:10px; font-size:1.1rem; border:1px solid #ccc; border-radius:6px; text-align:center; font-weight:bold; letter-spacing:2px; background:#fff;">
-                <button onclick="verifyReturnShopDelivery('${o.docId}', '${o.returnDeliveryOtp || o.returnOtp || ''}')" class="btn-deliver" style="padding:10px 12px; white-space:nowrap;">✔ ರಿಟರ್ನ್ ಕನ್ಫರ್ಮ್</button>
+            `;
+          } else if (o.status === 'AWAITING_SHOP_RETURN_APPROVAL') {
+            returnStepHtml = `
+              <div class="compact-box shop-box" style="text-align:center;">
+                <b>✔ ರಿಟರ್ನ್ ಪಿಕ್ ಅಪ್ ಆಗಿದೆ!</b><br>
+                <button type="button" onclick="confirmShopReturnReceived('${o.docId}')" class="btn btn-success" style="margin-top:6px; padding:8px; font-size:0.78rem;">✔ ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್</button>
               </div>
-            </div>
-          `;
+            `;
+          } else {
+            returnStepHtml = `
+              <div class="compact-box shop-box">
+                <b>ಅಂಗಡಿಗೆ ರಿಟರ್ನ್ ನೀಡಿ:</b> ${shopName} (${shopAddr}) • 📱 ${shopPhone}
+                <div class="otp-row">
+                  <input type="tel" inputmode="numeric" maxlength="4" id="retDeliverOtp_${o.docId}" placeholder="ಅಂಗಡಿ OTP" class="otp-input">
+                  <button onclick="verifyReturnShopDelivery('${o.docId}', '${o.returnDeliveryOtp || o.returnOtp || ''}')" class="btn-deliver">✔ ರಿಟರ್ನ್ ಕನ್ಫರ್ಮ್</button>
+                </div>
+              </div>
+            `;
+          }
         }
 
         return `
           <div class="order-item" style="border-left-color: ${exchangeItem ? '#0288d1' : 'var(--danger)'};">
-            <div style="display:flex; gap:10px; align-items:center; margin-bottom:10px;">
-              <img src="${o.productPhoto}" style="width:60px; height:60px; object-fit:cover; border-radius:6px;">
+            <div style="display:flex; gap:8px; align-items:center;">
+              <img src="${o.productPhoto}" style="width:52px; height:52px; object-fit:cover; border-radius:6px;">
               <div>
-                <h4 style="font-size:0.9rem;">${o.productName}</h4>
-                <p style="font-size:0.8rem; color:${exchangeItem ? '#01579b' : 'var(--danger)'}; font-weight:bold;">${exchangeItem ? '🔁 ಎಕ್ಸ್ಚೇಂಜ್' : '↩️ ರಿಟರ್ನ್'} — ಕಾರಣ: ${o.returnReason || (exchangeItem ? 'Exchange Item' : 'Size/Quality Issue')} (ರಿಟರ್ನ್ ಚಾರ್ಜ್: ₹${returnChargeRate})</p>
-                <div>${payBadge}</div>
+                <b style="font-size:0.86rem;">${o.productName}</b> <span style="font-size:0.72rem; color:#666;">(${o.orderId || ''})</span><br>
+                <span style="font-size:0.74rem; color:#555;">${exchangeItem ? '🔁 ಎಕ್ಸ್ಚೇಂಜ್' : '↩️ ರಿಟರ್ನ್'} • ಚಾರ್ಜ್: ₹${returnChargeRate}</span>
               </div>
             </div>
             ${returnStepHtml}
@@ -1104,15 +984,13 @@
         const exchangeItem = isExchangeOrder(o);
         const chargeEarned = isReturn ? calculateOrderDboyCharge(o, 'RETURN') : calculateOrderDboyCharge(o, 'DELIVERY');
         const totalAmt = Number(o.totalPrice || o.basePrice || o.itemPrice || 0);
-        const isOnlinePaid = o.paymentMode && o.paymentMode !== 'COD' && o.paymentMode !== 'CASH_ON_DELIVERY';
-        const payBadge = exchangeItem ? `(Exchange - ₹0)` : (!isOnlinePaid ? `(COD Order)` : `(UPI Paid)`);
         return `
           <div class="order-item" style="border-left-color: ${isReturn ? 'var(--danger)' : 'var(--success)'};">
-            <p><b>${o.productName}</b> - ${exchangeItem ? 'ಎಕ್ಸ್ಚೇಂಜ್' : `₹${totalAmt}`} <span style="font-size:0.75rem; color:#666;">${payBadge}</span></p>
-            <p style="font-size:0.75rem; color:#555;">ಗ್ರಾಹಕರು: ${o.customer?.name || ''} | ವಿಳಾಸ: ${o.customer?.village || ''}</p>
-            <p style="font-size:0.75rem; color:${isReturn ? 'var(--danger)' : 'var(--success)'}; font-weight:bold; margin-top:2px;">
-              ${isReturn ? `✔ ಕಂಪ್ಲೀಟ್ ಪಿಕಪ್ ರಿಟರ್ನ್ (+₹${chargeEarned})` : `✔ ಡೆಲಿವರಿ ಆಗಿದೆ (+₹${chargeEarned})`}
-            </p>
+            <b>${o.productName}</b> - ${exchangeItem ? 'ಎಕ್ಸ್ಚೇಂಜ್' : `₹${totalAmt}`}<br>
+            <span style="font-size:0.74rem; color:#555;">${o.customer?.name || ''} • ${o.customer?.village || ''}</span><br>
+            <span style="font-size:0.74rem; color:${isReturn ? 'var(--danger)' : 'var(--success)'}; font-weight:bold;">
+              ${isReturn ? `✔ ರಿಟರ್ನ್ ಪೂರ್ಣ (+₹${chargeEarned})` : `✔ ಡೆಲಿವರಿ ಪೂರ್ಣ (+₹${chargeEarned})`}
+            </span>
           </div>
         `;
       }).join('');
@@ -1126,49 +1004,40 @@
           cancelOtpSentAt: Date.now(),
           assignedDboyId: dboy.id
         });
-        alert(`📲 ಗ್ರಾಹಕರಿಗೆ ಕ್ಯಾನ್ಸಲ್ OTP ಕಳುಹಿಸಲಾಗಿದೆ!\n\nಗ್ರಾಹಕರ ಫೋನ್: ${custPhone || 'ಲಭ್ಯವಿಲ್ಲ'}\nಕ್ಯಾನ್ಸಲ್ OTP: ${cancelOtp}\n\n(ಗ್ರಾಹಕರಿಂದ OTP ಪಡೆದು ಪಕ್ಕದ ಬಾಕ್ಸ್‌ನಲ್ಲಿ ಹಾಕಿ 'ಕ್ಯಾನ್ಸಲ್ ಕನ್ಫರ್ಮ್' ಒತ್ತಿ.)`);
-      } catch (e) {
-        alert("OTP ಕಳುಹಿಸಲು ದೋಷ: " + e.message);
-      }
+        alert(`📲 ಗ್ರಾಹಕರಿಗೆ ಕ್ಯಾನ್ಸಲ್ OTP ಕಳುಹಿಸಲಾಗಿದೆ: ${cancelOtp} (ಫೋನ್: ${custPhone || 'N/A'})`);
+      } catch (e) { alert("ದೋಷ: " + e.message); }
     }
 
     async function confirmCancelOrderWithOtp(docId, orderId) {
       const inp = document.getElementById(`cancelOtpInput_${docId}`);
       const enteredOtp = (inp?.value || '').trim();
-      if (!enteredOtp || enteredOtp.length < 4) {
-        alert("ದಯವಿಟ್ಟು 4-ಅಂಕಿಯ ಕ್ಯಾನ್ಸಲ್ OTP ನಮೂದಿಸಿ.");
-        return;
-      }
+      if (!enteredOtp || enteredOtp.length < 4) { alert("4-ಅಂಕಿಯ ಕ್ಯಾನ್ಸಲ್ OTP ಹಾಕಿ."); return; }
 
       try {
         const snap = await window.getDoc(window.doc(window.db, "orders", docId));
         const orderData = snap.exists() ? snap.data() : {};
         if (orderData.cancelOtp && String(orderData.cancelOtp) !== enteredOtp) {
-          alert("❌ ತಪ್ಪಾದ ಕ್ಯಾನ್ಸಲ್ OTP! ದಯವಿಟ್ಟು ಸರಿಯಾದ OTP ನಮೂದಿಸಿ.");
+          alert("❌ ತಪ್ಪಾದ ಕ್ಯಾನ್ಸಲ್ OTP!");
           return;
         }
-
-        const msgToShop = `ಈ ಆರ್ಡರ್ (${orderId || docId}) ನಿಮ್ದು — ಗ್ರಾಹಕರು ಕ್ಯಾನ್ಸಲ್ ಮಾಡಿದ್ದಾರೆ (OTP ದೃಢೀಕೃತವಾಗಿದೆ).`;
         await window.updateDoc(window.doc(window.db, "orders", docId), {
           status: 'CANCELLED_BY_CUSTOMER',
           isCancelled: true,
           cancelledBy: 'CUSTOMER',
           cancelOtpVerified: true,
-          cancelMessage: msgToShop,
+          cancelMessage: `ಈ ಆರ್ಡರ್ (${orderId || docId}) ನಿಮ್ದು — ಗ್ರಾಹಕರು ಕ್ಯಾನ್ಸಲ್ ಮಾಡಿದ್ದಾರೆ.`,
           cancelledAt: serverTimestamp(),
           cancelledAtMs: Date.now(),
           assignedDboyId: dboy.id
         });
-        alert("✅ ಆರ್ಡರ್ ಯಶಸ್ವಿಯಾಗಿ ಕ್ಯಾನ್ಸಲ್ ಆಗಿದೆ ಮತ್ತು ಅಂಗಡಿ ಮಾಲೀಕರಿಗೆ ತಕ್ಷಣ ತಲುಪಿಸಲಾಗಿದೆ!");
-      } catch (e) {
-        alert("ಕ್ಯಾನ್ಸಲ್ ಮಾಡಲು ದೋಷ: " + e.message);
-      }
+        alert("✅ ಆರ್ಡರ್ ಕ್ಯಾನ್ಸಲ್ ಆಗಿದೆ!");
+      } catch (e) { alert("ದೋಷ: " + e.message); }
     }
 
     async function verifyPickupOtp(docId, correctOtp) {
       const inputVal = document.getElementById(`pickupOtp_${docId}`).value.trim();
       if (!inputVal || (correctOtp && inputVal !== String(correctOtp))) {
-        alert("❌ ತಪ್ಪಾದ ಒಟಿಪಿ! ದಯವಿಟ್ಟು ಅಂಗಡಿ ಮಾಲೀಕರ ಬಳಿ ಸರಿಯಾದ 4-ಅಂಕಿಯ ಒಟಿಪಿ ಪಡೆದು ನಮೂದಿಸಿ.");
+        alert("❌ ತಪ್ಪಾದ ಅಂಗಡಿ ಪಿಕ್ ಅಪ್ OTP!");
         return;
       }
       try {
@@ -1178,14 +1047,14 @@
           assignedDboyId: dboy.id,
           deliveryBoyPhone: dboy.phone
         });
-        alert("✅ ಪಿಕ್ ಅಪ್ ಒಟಿಪಿ ಯಶಸ್ವಿಯಾಗಿದೆ! ಈಗ ಗ್ರಾಹಕರ ವಿಳಾಸ ತೆರೆದುಕೊಂಡಿದೆ.");
+        alert("✅ ಅಂಗಡಿ ಪಿಕ್ ಅಪ್ OK! ಈಗ ಗ್ರಾಹಕರ ವಿಳಾಸ ಕಾಣಿಸುತ್ತದೆ.");
       } catch (e) { alert("ದೋಷ: " + e.message); }
     }
 
     async function verifyDeliveryOtp(docId, correctOtp) {
       const inputVal = document.getElementById(`deliveryOtp_${docId}`).value.trim();
       if (!inputVal || (correctOtp && inputVal !== String(correctOtp))) {
-        alert("❌ ತಪ್ಪಾದ ಒಟಿಪಿ! ದಯವಿಟ್ಟು ಗ್ರಾಹಕರ ಬಳಿ ಸರಿಯಾದ 4-ಅಂಕಿಯ ಒಟಿಪಿ ಪಡೆದು ನಮೂದಿಸಿ.");
+        alert("❌ ತಪ್ಪಾದ ಡೆಲಿವರಿ OTP!");
         return;
       }
       try {
@@ -1197,14 +1066,31 @@
           assignedDboyId: dboy.id,
           deliveryBoyPhone: dboy.phone
         });
-        alert(`🎉 ಡೆಲಿವರಿ ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಂಡಿದೆ! ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್‌ಗೂ ತಕ್ಷಣ ಅಪ್‌ಡೇಟ್ ಆಗಿದೆ.`);
+        alert("🎉 ಡೆಲಿವರಿ ಯಶಸ್ವಿಯಾಗಿದೆ!");
+      } catch (e) { alert("ದೋಷ: " + e.message); }
+    }
+
+    async function verifyExchangeShopPickup(docId, correctOtp) {
+      const inputVal = document.getElementById(`exShopOtp_${docId}`).value.trim();
+      if (!inputVal || (correctOtp && inputVal !== String(correctOtp))) {
+        alert("❌ ತಪ್ಪಾದ ಅಂಗಡಿ OTP!");
+        return;
+      }
+      try {
+        await window.updateDoc(window.doc(window.db, "orders", docId), {
+          isExchangeShopPickedUp: true,
+          exchangeShopPickedUpAtMs: Date.now(),
+          returnDboyId: dboy.id,
+          shopHardPackingInstruction: "ಇದು ಎಕ್ಸ್ಚೇಂಜ್ ಆಗಿದೆ — ವಸ್ತುವನ್ನು ಹಾರ್ಟ್ ಪ್ಯಾಕಿಂಗ್ ಮಾಡಿ ಕಳಿಸಿ; ರಿಟರ್ನ್ ತಲುಪಿದಾಗ 'ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್' ಒತ್ತಿ."
+        });
+        alert("✅ ಅಂಗಡಿಯಿಂದ ಎಕ್ಸ್ಚೇಂಜ್ ವಸ್ತು ಪಡೆಯಲಾಗಿದೆ! ಈಗ ಗ್ರಾಹಕರ ವಿಳಾಸ ಕಾಣಿಸುತ್ತದೆ.");
       } catch (e) { alert("ದೋಷ: " + e.message); }
     }
 
     async function verifyReturnCustomerPickup(docId, correctOtp) {
       const inputVal = document.getElementById(`retPickupOtp_${docId}`).value.trim();
       if (!inputVal || (correctOtp && correctOtp !== "undefined" && inputVal !== String(correctOtp))) {
-        alert("❌ ತಪ್ಪಾದ ಒಟಿಪಿ! ದಯವಿಟ್ಟು ಗ್ರಾಹಕರ ಬಳಿ ಸರಿಯಾದ 4-ಅಂಕಿಯ ರಿಟರ್ನ್ ಒಟಿಪಿ ಪಡೆದು ನಮೂದಿಸಿ.");
+        alert("❌ ತಪ್ಪಾದ ರಿಟರ್ನ್ OTP!");
         return;
       }
       try {
@@ -1212,7 +1098,6 @@
         const orderData = snap.exists() ? snap.data() : {};
         const exchangeItem = isExchangeOrder(orderData);
 
-        // ಡೆಲಿವರಿ ಬಾಯ್ ರಿಟರ್ನ್ ಪಿಕ್ ಅಪ್ ಮಾಡಿದ ನಂತರ ಅಂಗಡಿ ಮಾಲೀಕರಿಗೆ ಹಾರ್ಟ್ ಪ್ಯಾಕಿಂಗ್ + ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್ ಸೂಚನೆ ಹಾಗೂ ಡೆಲಿವರಿ ಬಾಯ್‌ಗೆ ಕನ್ಫರ್ಮ್ ಬಟನ್ ಸಕ್ರಿಯ
         await window.updateDoc(window.doc(window.db, "orders", docId), {
           isReturnPickedUp: true,
           returnPickedByDboy: true,
@@ -1220,27 +1105,27 @@
           returnPickedUpAtMs: Date.now(),
           returnDboyId: dboy.id,
           shopHardPackingInstruction: exchangeItem
-            ? "ಇದು ಎಕ್ಸ್ಚೇಂಜ್ ಆಗಿದೆ — ನೀವು ಕೊಡುವ ವಸ್ತುವನ್ನು ಹಾರ್ಟ್ ಪ್ಯಾಕಿಂಗ್ ಮಾಡಿ ಡೆಲಿವರಿ ಬಾಯ್‌ಗೆ ಕಳಿಸಿ; ರಿಟರ್ನ್ ವಸ್ತು ನಿಮ್ಮ ಅಂಗಡಿಗೆ ತಲುಪಿದಾಗ 'ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್' ಬಟನ್ ಒತ್ತಿ."
-            : "ರಿಟರ್ನ್ ವಸ್ತು ನಿಮ್ಮ ಅಂಗಡಿಗೆ ತಲುಪಿದಾಗ 'ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್' ಬಟನ್ ಒತ್ತಿ."
+            ? "ಇದು ಎಕ್ಸ್ಚೇಂಜ್ ಆಗಿದೆ — ವಸ್ತುವನ್ನು ಹಾರ್ಟ್ ಪ್ಯಾಕಿಂಗ್ ಮಾಡಿ ಕಳಿಸಿ; ರಿಟರ್ನ್ ತಲುಪಿದಾಗ 'ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್' ಒತ್ತಿ."
+            : "ರಿಟರ್ನ್ ತಲುಪಿದಾಗ 'ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್' ಒತ್ತಿ."
         });
-        alert("✅ ರಿಟರ್ನ್ ಪಿಕ್ ಅಪ್ ಆಗಿದೆ! ಈಗ ರಿಟರ್ನ್ ಕನ್ಫರ್ಮ್ ಬಟನ್ ಸಕ್ರಿಯವಾಗಿದೆ ಮತ್ತು ಅಂಗಡಿ ಮಾಲೀಕರಿಗೆ ಸೂಚನೆ ಕಳುಹಿಸಲಾಗಿದೆ.");
+        alert("✅ ರಿಟರ್ನ್ ಪಡೆಯಲಾಗಿದೆ! ಈಗ ರಿಟರ್ನ್ ಕನ್ಫರ್ಮ್ ಬಟನ್ ಕಾಣಿಸುತ್ತದೆ.");
       } catch (e) { alert("ದೋಷ: " + e.message); }
     }
 
     async function verifyReturnShopDelivery(docId, correctOtp) {
       const inputVal = document.getElementById(`retDeliverOtp_${docId}`).value.trim();
       if (!inputVal || (correctOtp && correctOtp !== "undefined" && inputVal !== String(correctOtp))) {
-        alert("❌ ತಪ್ಪಾದ ಒಟಿಪಿ! ದಯವಿಟ್ಟು ಅಂಗಡಿ ಮಾಲೀಕರ ಬಳಿ ಸರಿಯಾದ 4-ಅಂಕಿಯ ರಿಟರ್ನ್ ಒಟಿಪಿ ಪಡೆದು ನಮೂದಿಸಿ.");
+        alert("❌ ತಪ್ಪಾದ ಅಂಗಡಿ OTP!");
         return;
       }
       try {
         await window.updateDoc(window.doc(window.db, "orders", docId), {
           status: 'AWAITING_SHOP_RETURN_APPROVAL',
           returnShopOtpVerified: true,
-          shopReturnPromptText: 'ರಿಟರ್ನ್ ನಿಮ್ಮ ಅಂಗಡಿಗೆ ತಲುಪಿದಾಗ ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್ ಬಟನ್ ಒತ್ತಿ',
+          shopReturnPromptText: 'ರಿಟರ್ನ್ ತಲುಪಿದಾಗ ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್ ಒತ್ತಿ',
           returnDboyId: dboy.id
         });
-        alert("✅ ರಿಟರ್ನ್ ಕನ್ಫರ್ಮ್ ಆಗಿದೆ! ಅಂಗಡಿ ಮಾಲೀಕರಲ್ಲಿ 'ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್' ಸೂಚನೆ ತೋರಿಸುತ್ತದೆ.");
+        alert("✅ ರಿಟರ್ನ್ ಕನ್ಫರ್ಮ್ ಆಗಿದೆ!");
       } catch (e) { alert("ದೋಷ: " + e.message); }
     }
 
@@ -1254,10 +1139,8 @@
           returnCompletedAtMs: Date.now(),
           returnDboyId: dboy.id
         });
-        alert("🎉 ಕಂಪ್ಲೀಟ್ ಪಿಕಪ್ ರಿಟರ್ನ್ ಪೂರ್ಣಗೊಂಡಿದೆ! ಮಾಸ್ಟರ್ ಪ್ಯಾನಲ್‌ಗೂ ಅಪ್‌ಡೇಟ್ ಆಗಿದೆ.");
-      } catch (e) {
-        alert("ದೋಷ: " + e.message);
-      }
+        alert("🎉 ಕನ್ಫರ್ಮ್ ಆರ್ಡರ್ ಪೂರ್ಣಗೊಂಡಿದೆ!");
+      } catch (e) { alert("ದೋಷ: " + e.message); }
     }
   </script>
 </body>
